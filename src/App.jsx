@@ -7,6 +7,7 @@ import AboutClinic from './pages/AboutClinic/AboutClinic';
 import Treatments from './pages/Treatments/Treatments';
 import Process from './pages/Process/Process';
 import Results from './pages/Results/Results';
+import Offer from './pages/Offer/Offer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Treatments />
       <Process/>
       <Results />     
+      <Offer />
     </>
   )
 }
