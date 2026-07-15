@@ -8,6 +8,7 @@ import Treatments from './pages/Treatments/Treatments';
 import Process from './pages/Process/Process';
 import Results from './pages/Results/Results';
 import Offer from './pages/Offer/Offer';
+import VideoShowcase from './pages/VideoShowcase/VideoShowCase';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Process/>
       <Results />     
       <Offer />
+      <VideoShowcase/>
     </>
   )
 }
