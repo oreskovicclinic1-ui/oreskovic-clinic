@@ -9,6 +9,8 @@ import Process from './pages/Process/Process';
 import Results from './pages/Results/Results';
 import Offer from './pages/Offer/Offer';
 import VideoShowcase from './pages/VideoShowcase/VideoShowCase';
+import Pricing from './pages/Pricing/Pricing';
+import Testimonials from './pages/Testimonials/Testimonials';
 
 function App() {
 
@@ -19,10 +21,12 @@ function App() {
       <TrustBar/>
       <AboutClinic/>
       <Treatments />
+      <Pricing/>
       <Process/>
       <Results />     
       <Offer />
       <VideoShowcase/>
+      <Testimonials/>
     </>
   )
 }

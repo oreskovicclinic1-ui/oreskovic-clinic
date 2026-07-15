@@ -7,7 +7,7 @@ const videos = [
   { id: 2, src: '/videos/02.mp4', title: 'Anti-age tretman' },
   { id: 3, src: '/videos/03.mp4', title: 'Terapija ozljeda' },
   { id: 5, src: '/videos/02.mp4', title: 'Anti-age tretman' },
-//   { id: 6, src: '/videos/03.mp4', title: 'Terapija ozljeda' },
+  { id: 6, src: '/videos/03.mp4', title: 'Terapija ozljeda' },
 ];
 
 export default function VideoShowcase() {
