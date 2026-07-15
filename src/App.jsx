@@ -11,6 +11,7 @@ import Offer from './pages/Offer/Offer';
 import VideoShowcase from './pages/VideoShowcase/VideoShowCase';
 import Pricing from './pages/Pricing/Pricing';
 import Testimonials from './pages/Testimonials/Testimonials';
+import FinalCta from './pages/FinalCta/Finalcta';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Offer />
       <VideoShowcase/>
       <Testimonials/>
+      <FinalCta/>
     </>
   )
 }
