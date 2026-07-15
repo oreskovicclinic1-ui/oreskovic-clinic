@@ -1,0 +1,42 @@
+:root {
+  --color-ivory: #F8F5F0;
+  --color-cream: #F1E8DC;
+  --color-champagne: #D8C6AE;
+  --color-charcoal: #221F1D;
+  --color-gold: #B69664;
+  --color-blush: #D9A9A0;
+  --color-white: #FFFFFF;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* Same width every section uses for its content, so nothing is ever
+     narrower or wider than the header/hero. */
+  --container-width: 1240px;
+  --container-padding: 24px;
+
+  /* Same top/bottom padding on every section = equal visual gap between
+     any two sections, regardless of their background color. */
+  --section-padding-y: 72px;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --container-padding: 40px;
+    --section-padding-y: 120px;
+  }
+}
+
+/* Put on the direct wrapper of a section's content. */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Put on the outer <section> tag itself. */
+.section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
