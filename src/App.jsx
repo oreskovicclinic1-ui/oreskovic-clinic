@@ -10,12 +10,13 @@ import StickyBar from './components/Stickybar/Stickybar';
 import PrivacySettingsPage from './pages/CookieSettingsPage/PrivacySettingsPage';
 import PrivacyBanner from './components/CookieConsentBanner/PrivacyBanner';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
 
   return (
     <>
-
+      <ScrollToTop/>
       <Header />
 
       <Routes>
