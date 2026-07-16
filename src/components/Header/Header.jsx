@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logo from '../../assets/logo.png'
 import './Header.css';
+import logo from '../../assets/logo-black.png';
 
 const t = {
   oKlinici: 'O klinici',
@@ -40,7 +40,7 @@ export default function Header() {
   }
 
   return (
-    <header className="site-header">
+    <header className="site-header header-shake">
       <div className="header-bar">
         <a href="/" className="header-logo" onClick={closeMenus}>
           <img src={logo} alt="Orešković Clinic" />
