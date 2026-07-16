@@ -112,6 +112,9 @@ export default function Pricing() {
         <h2 className="pricing-title">
           Jasne cijene, <em>bez</em> skrivenih troškova.
         </h2>
+          <p className="trust-subtitle">
+            Za točnu ponudu i konzultacije, slobodno nas kontaktirajte – rado ćemo vas uputiti na najbolji tretman za vas!
+          </p>
       </div>
 
       <div className="container pricing-grid">
