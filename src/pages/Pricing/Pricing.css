@@ -33,6 +33,15 @@
   color: var(--color-gold);
 }
 
+.pricing-subtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4A4644;
+  max-width: 480px;
+  margin: 12px auto 0;
+}
+
 /* Grid of two panels */
 
 .pricing-grid {
@@ -212,5 +221,30 @@
 
   .pricing-panel-content {
     flex: 1;
+  }
+}
+
+/* Scroll reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-2 {
+  transition-delay: 0.15s;
+}
+
+.pricing.is-visible .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

@@ -1,4 +1,4 @@
-
+import { useEffect, useRef } from 'react';
 import pricing1 from '../../assets/pricing1.webp';
 import pricing2 from '../../assets/pricing2.webp';
 import pricing1mobile from '../../assets/pricing1mobile.png';
@@ -105,19 +105,40 @@ function PricingPanel({ category, imageSide }) {
 }
 
 export default function Pricing() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          node.classList.add('is-visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="pricing section">
-      <div className="container pricing-intro">
+    <section className="pricing section" ref={sectionRef}>
+      <div className="container pricing-intro reveal">
         <p className="pricing-kicker">CJENIK</p>
         <h2 className="pricing-title">
           Jasne cijene, <em>bez</em> skrivenih troškova.
         </h2>
-          <p className="trust-subtitle">
-            Za točnu ponudu i konzultacije, slobodno nas kontaktirajte – rado ćemo vas uputiti na najbolji tretman za vas!
-          </p>
+        <p className="pricing-subtitle">
+          Za točnu ponudu i konzultacije, slobodno nas kontaktirajte – rado ćemo vas uputiti na
+          najbolji tretman za vas!
+        </p>
       </div>
 
-      <div className="container pricing-grid">
+      <div className="container pricing-grid reveal reveal-2">
         <PricingPanel category={healthTherapies} imageSide="left" />
         <PricingPanel category={aestheticTreatments} imageSide="right" />
       </div>

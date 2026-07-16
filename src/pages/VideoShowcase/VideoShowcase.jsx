@@ -11,7 +11,26 @@ const videos = [
 ];
 
 export default function VideoShowcase() {
+  const sectionRef = useRef(null);
   const trackRef = useRef(null);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          node.classList.add('is-visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -64,13 +83,13 @@ export default function VideoShowcase() {
   }, []);
 
   return (
-    <section className="video-showcase section">
-      <div className="container video-intro">
+    <section className="video-showcase section" ref={sectionRef}>
+      <div className="container video-intro reveal">
         <p className="video-kicker">TRETMANI UŽIVO</p>
         <h2 className="video-title">Pogledajte kako izgledaju naši tretmani!</h2>
       </div>
 
-      <div className="container">
+      <div className="container reveal reveal-2">
         <div className="video-row" ref={trackRef}>
           {videos.map((video) => (
             <div className="video-item" key={video.id}>
