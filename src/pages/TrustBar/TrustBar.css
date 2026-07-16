@@ -18,7 +18,7 @@
 .trust-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(248, 245, 240, 0.666);
+  background-color: rgba(248, 245, 240, 0.82);
 }
 
 .trust-content {
@@ -123,5 +123,30 @@
 
   .trust-stat:first-child {
     border-left: none;
+  }
+}
+
+/* Scroll reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-2 {
+  transition-delay: 0.15s;
+}
+
+.trust.is-visible .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

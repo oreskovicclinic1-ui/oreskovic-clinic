@@ -25,11 +25,30 @@ const loopTreatments = [...treatments, ...treatments];
 const AUTOPLAY_SPEED = 0.6; // pixels per animation frame
 
 export default function Treatments() {
+  const sectionRef = useRef(null);
   const trackRef = useRef(null);
   const isDraggingRef = useRef(false);
   const isPausedRef = useRef(false);
   const dragStartRef = useRef({ x: 0, scrollLeft: 0 });
   const [isDragging, setIsDragging] = useState(false);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          node.classList.add('is-visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -74,8 +93,8 @@ export default function Treatments() {
   }
 
   return (
-    <section className="treatments section">
-      <div className="container treatments-intro">
+    <section className="treatments section" ref={sectionRef}>
+      <div className="container treatments-intro reveal">
         <p className="treatments-kicker">TRETMANI</p>
 
         <h2 className="treatments-title">
@@ -91,7 +110,7 @@ export default function Treatments() {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container reveal reveal-2">
         <div
           className={`treatments-track ${isDragging ? 'is-dragging' : ''}`}
           ref={trackRef}
