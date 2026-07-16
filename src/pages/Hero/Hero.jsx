@@ -1,13 +1,21 @@
 import './Hero.css';
 
-import hero from '../../assets/hero.webp';
 import hero1 from '../../assets/hero1.jpg';
+
 
 export default function Hero() {
   return (
     <section className="hero section">
+      <div className="hero-bg" aria-hidden="true">
+        <span className="hero-blob hero-blob-1"></span>
+        <span className="hero-blob hero-blob-2"></span>
+        <span className="hero-blob hero-blob-3"></span>
+      </div>
+
+      <span className="hero-watermark" aria-hidden="true">NJEGA</span>
+
       <div className="container hero-grid">
-        <div className="hero-content">
+        <div className="hero-content hero-enter">
           <p className="hero-kicker">ZAGREB • OPATIJA</p>
 
           <h1 className="hero-title">
@@ -38,7 +46,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="hero-visual">
+        <div className="hero-visual hero-enter hero-enter-2">
           <img src={hero1} alt="Orešković Clinic - njega i oporavak" />
         </div>
       </div>

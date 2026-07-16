@@ -1,10 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap');
 
 .hero {
+  position: relative;
   background-color: #F8F5F0;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.6;
+  animation: hero-drift 16s ease-in-out infinite;
+}
+
+.hero-blob-1 {
+  width: 420px;
+  height: 420px;
+  top: -100px;
+  left: -80px;
+  background: var(--color-gold);
+  animation-duration: 18s;
+}
+
+.hero-blob-2 {
+  width: 360px;
+  height: 360px;
+  top: 10%;
+  right: -100px;
+  background: var(--color-blush);
+  animation-duration: 22s;
+  animation-delay: -6s;
+}
+
+.hero-blob-3 {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  left: 30%;
+  background: var(--color-champagne);
+  animation-duration: 17s;
+  animation-delay: -12s;
+}
+
+@keyframes hero-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(70px, 50px) scale(1.2);
+  }
+  66% {
+    transform: translate(-55px, 25px) scale(0.9);
+  }
+}
+
+.hero-watermark {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22vw;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(34, 31, 29, 0.06);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob {
+    animation: none;
+  }
 }
 
 .hero-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
@@ -128,6 +211,8 @@
   max-height: 480px;
   object-fit: cover;
   border-radius: 24px;
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
 }
 
 @media (min-width: 900px) {
@@ -142,5 +227,32 @@
 
   .hero-visual {
     margin-top: 100px;
+  }
+}
+
+/* Entrance animation - plays automatically on page load, no JS needed */
+
+.hero-enter {
+  animation: hero-fade-in 0.9s ease both;
+}
+
+.hero-enter-2 {
+  animation-delay: 0.15s;
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter {
+    animation: none;
   }
 }
