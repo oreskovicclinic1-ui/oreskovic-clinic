@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import pricing1 from '../../assets/pricing1.webp';
 import pricing2 from '../../assets/pricing2.webp';
-import pricing1mobile from '../../assets/pricing1mobile.png';
-import pricing2mobile from '../../assets/pricing2mobile.png';
+import pricing1mobile from '../../assets/pricing1mobile.webp';
+import pricing2mobile from '../../assets/pricing2mobile.webp';
 import './Pricing.css';
 
 // To add/edit treatments or prices later: just edit these two arrays.

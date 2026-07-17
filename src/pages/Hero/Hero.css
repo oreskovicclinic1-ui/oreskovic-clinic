@@ -4,6 +4,8 @@
   position: relative;
   background-color: #F8F5F0;
   overflow: hidden;
+  margin-top: -110px;
+  padding-top: calc(var(--section-padding-y) + 110px);
 }
 
 .hero-bg {
