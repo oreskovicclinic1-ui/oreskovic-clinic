@@ -12,6 +12,9 @@ import PrivacyBanner from './components/CookieConsentBanner/PrivacyBanner';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage';
 import ScrollToTop from './utils/ScrollToTop';
 import ResultsPage from './pages/ResultsPage/ResultsPage';
+import CjenikPage from './pages/CjenikPage/CjenikPage';
+import TreatmentPage from './pages/TreatmentPage/TreatmentPage';
+
 
 function App() {
 
@@ -26,6 +29,8 @@ function App() {
           <Route path="/postavke-kolacica" element={<PrivacySettingsPage />} />
           <Route path="/politika-privatnosti" element={<PrivacyPolicyPage />} />
           <Route path="/rezultati" element={<ResultsPage />} />
+          <Route path="/cjenik" element={<CjenikPage />} />
+          <Route path="/tretmani/:slug" element={<TreatmentPage />} />
 
       </Routes>
 
