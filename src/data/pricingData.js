@@ -136,7 +136,7 @@ export const categories = [
     id: 'estetika-kozmetologija',
     group: 'estetski',
     label: 'Estetika i kozmetologija',
-    description: 'Pregled naših najtraženijih estetskih i kozmetoloških tretmana.',
+    description: 'Pregled naših najtraženijih estetskih i kozmetoloških tretmana. (genericki) ',
     kind: 'simple',
     tiers: [
       { label: 'Laserska epilacija', price: '100€' },
@@ -151,7 +151,7 @@ export const categories = [
     id: 'botox',
     group: 'estetski',
     label: 'Tretmani botoksom',
-    description: 'Aplikacija botoksa za uklanjanje bora, ovisno o broju tretiranih zona.',
+    description: 'Aplikacija botoksa za uklanjanje bora, ovisno o broju tretiranih zona. (genericki) ',
     kind: 'simple',
     tiers: [
       { label: '1 zona', price: '120€' },

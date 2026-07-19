@@ -476,6 +476,141 @@ export const treatments = {
       'Tretman je namijenjen svima koji žele podignutiju, oblikovaniju i učvršćeniju stražnjicu, bez operativnog zahvata. (generički)',
     faq: genericFaq,
   },
+
+  'estetika-kozmetologija': {
+    pricingId: 'estetika-kozmetologija',
+    slug: 'estetika-kozmetologija',
+    name: 'Estetika i kozmetologija (generic)',
+    category: 'Lice',
+    heroImage: '/treatments/estetika-kozmetologija.webp',
+    pricingImage: '/treatments/estetika-kozmetologija-pricing.webp',
+    shortBenefit:
+      'Kompletna njega lica na jednom mjestu — od laserske epilacije do dubinske hidratacije. Kombiniramo provjerene metode za zdraviju, sjajniju kožu. Svaki tretman prilagođavamo individualno vašem tipu kože.',
+    description:
+      'Pregled naših najtraženijih estetskih i kozmetoloških tretmana — od laserske epilacije, preko Hydrafaciala i skin-boostera, do hidro-dermoabrazije i radiofrekventne njege kože. Svaki tretman biramo i prilagođavamo prema potrebama vaše kože.',
+    highlights: [
+      'Više tretmana na jednom mjestu',
+      'Prilagođeno tipu i stanju kože',
+      'Moderna oprema i provjerene metode',
+      'Bez dugog perioda oporavka',
+    ],
+    process: [
+      { title: 'Konsultacija', text: 'Analiziramo stanje vaše kože i predlažemo najprikladniji tretman.' },
+      { title: 'Tretman', text: 'Odabrani tretman provodimo prilagođenom tehnikom i opremom.' },
+      { title: 'Njega nakon tretmana', text: 'Dajemo preporuke za njegu kože kod kuće radi dužeg trajanja rezultata.' },
+    ],
+    forWhom:
+      'Namijenjeno svima koji žele unaprijediti izgled i zdravlje kože, bez obzira na tip kože ili specifičan problem koji žele riješiti.',
+    faq: genericFaq,
+  },
+
+  'opca-medicina': {
+    pricingId: 'opca-medicina',
+    slug: 'opca-medicina',
+    name: 'Opća medicina i dijagnostika (generic)',
+    category: 'Zdravstvene usluge',
+    heroImage: '/treatments/opca-medicina.webp',
+    pricingImage: '/treatments/opca-medicina-pricing.webp',
+    shortBenefit:
+      'Pregledi, dijagnostika i osnovna zdravstvena skrb na jednom mjestu. Od redovnih kontrola do hitnih pregleda, brzo i bez čekanja. Naš tim opće medicine uvijek vam je dostupan.',
+    description:
+      'Nudimo kompletan raspon usluga opće medicine — od prvih i kontrolnih pregleda, preko dijagnostike (EKG, mjerenje tlaka, uzorkovanje krvi), do izdavanja medicinske dokumentacije i recepata. Dostupni smo i za pregled u kući.',
+    highlights: [
+      'Prvi i kontrolni pregledi',
+      'Dijagnostika i laboratorijske pretrage',
+      'Mogućnost pregleda u kući',
+      'Brzo izdavanje dokumentacije i recepata',
+    ],
+    process: [
+      { title: 'Zakazivanje', text: 'Dogovaramo termin prema vašim potrebama i hitnosti.' },
+      { title: 'Pregled', text: 'Liječnik opće medicine obavlja pregled i po potrebi dijagnostiku.' },
+      { title: 'Nalaz i preporuke', text: 'Dobivate nalaz, preporuke i, po potrebi, terapiju ili recept.' },
+    ],
+    forWhom:
+      'Namijenjeno svima kojima je potreban pregled liječnika opće medicine — redovna kontrola, hitno stanje, ili dijagnostička pretraga.',
+    faq: genericFaq,
+  },
+
+  'medicinske-intervencije': {
+    pricingId: 'medicinske-intervencije',
+    slug: 'medicinske-intervencije',
+    name: 'Medicinske intervencije i terapije (generic)',
+    category: 'Zdravstvene usluge',
+    heroImage: '/treatments/medicinske-intervencije.webp',
+    pricingImage: '/treatments/medicinske-intervencije-pricing.webp',
+    shortBenefit:
+      'Brza i stručna pomoć za manje medicinske intervencije. Od infuzija do zbrinjavanja rana, sve u sigurnom ordinacijskom okruženju. Profesionalno osoblje, bez čekanja.',
+    description:
+      'Pružamo manje medicinske intervencije i terapije — intravenske i intramuskularne injekcije, previjanje rana, zaustavljanje krvarenja, tamponadu nosa i uklanjanje stranih tijela. Sve u sigurnom, kontroliranom okruženju.',
+    highlights: [
+      'Stručno osoblje i sterilno okruženje',
+      'Brza intervencija bez čekanja',
+      'Širok raspon manjih zahvata',
+      'Pogodno i za hitne situacije',
+    ],
+    process: [
+      { title: 'Procjena', text: 'Kratka procjena stanja i potrebne intervencije.' },
+      { title: 'Intervencija', text: 'Intervencija se izvodi stručno i uz maksimalnu pažnju za vašu udobnost.' },
+      { title: 'Upute za dalje', text: 'Dobivate upute za njegu i eventualnu kontrolu.' },
+    ],
+    forWhom:
+      'Namijenjeno svima kojima je potrebna manja medicinska intervencija — od injekcija do zbrinjavanja manjih ozljeda.',
+    faq: genericFaq,
+  },
+
+  'fizikalna-terapija': {
+    pricingId: 'fizikalna-terapija',
+    slug: 'fizikalna-terapija',
+    name: 'Fizikalna i regenerativna terapija (generic)',
+    category: 'Zdravstvene usluge',
+    heroImage: '/treatments/fizikalna-terapija.webp',
+    pricingImage: '/treatments/fizikalna-terapija-pricing.webp',
+    shortBenefit:
+      'Ubrzajte oporavak i smanjite bol uz moderne fizikalne terapije. Djelujemo na cirkulaciju, regeneraciju tkiva i mišićni tonus. Bez lijekova, bez perioda mirovanja.',
+    description:
+      'Nudimo širok raspon fizikalnih i regenerativnih terapija — od radiofrekventne regeneracije tkiva, preko limfne drenaže, do neuromuskularne stimulacije. Terapije potiču cirkulaciju, smanjuju upalu i ubrzavaju oporavak tkiva.',
+    highlights: [
+      'Ubrzava regeneraciju tkiva',
+      'Smanjuje bol i upalu',
+      'Poboljšava cirkulaciju i mišićni tonus',
+      'Bez lijekova i bez perioda mirovanja',
+    ],
+    process: [
+      { title: 'Procjena', text: 'Analiziramo vaše stanje i biramo najprikladniju terapiju.' },
+      { title: 'Terapija', text: 'Terapija se provodi ciljano na tretirano područje.' },
+      { title: 'Praćenje napretka', text: 'Pratimo napredak kroz seriju terapija do željenog rezultata.' },
+    ],
+    forWhom:
+      'Namijenjeno svima koji se bore s bolovima, upalama, slabom cirkulacijom ili žele ubrzati oporavak nakon napora ili ozljede.',
+    faq: genericFaq,
+  },
+
+  nutricionizam: {
+    pricingId: 'nutricionizam',
+    slug: 'nutricionizam',
+    name: 'Nutricionizam i savjetovanje (generic)',
+    category: 'Zdravstvene usluge',
+    heroImage: '/treatments/nutricionizam.webp',
+    pricingImage: '/treatments/nutricionizam-pricing.webp',
+    shortBenefit:
+      'Personalizovan plan ishrane baziran na stvarnoj analizi vašeg tijela. Stručno savjetovanje za mršavljenje, energiju i opće zdravlje. Konkretan plan, ne generički savjeti.',
+    description:
+      'Kroz tjelesnu analizu i stručno nutricionističko savjetovanje kreiramo plan ishrane prilagođen vašim ciljevima — bilo da je riječ o mršavljenju, više energije, ili općem poboljšanju zdravlja.',
+    highlights: [
+      'Detaljna tjelesna analiza s tumačenjem',
+      'Individualno prilagođen plan ishrane',
+      'Stručno vođeno savjetovanje',
+      'Fokus na dugoročne, održive rezultate',
+    ],
+    process: [
+      { title: 'Analiza', text: 'Provodimo tjelesnu analizu i razgovor o vašim ciljevima.' },
+      { title: 'Plan', text: 'Kreiramo personalizovan plan ishrane prilagođen vašem stilu života.' },
+      { title: 'Praćenje', text: 'Pratimo napredak i po potrebi prilagođavamo plan.' },
+    ],
+    forWhom:
+      'Namijenjeno svima koji žele mršaviti, poboljšati energiju, ili jednostavno razumjeti kako ishrana utječe na njihovo zdravlje.',
+    faq: genericFaq,
+  },
 };
 
 export function getTreatmentBySlug(slug) {

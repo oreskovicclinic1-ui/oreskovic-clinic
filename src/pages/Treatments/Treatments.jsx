@@ -3,14 +3,24 @@ import './Treatments.css';
 
 const treatments = [
   { name: 'Anti age tretmani', category: 'Lice', slug: 'anti-age' },
-  { name: 'Uklanjanje podbratka', category: 'Lice', slug: 'uklanjanje-podbratka' },
+  { name: 'Botox', category: 'Lice', slug: 'botox' },
+  { name: 'Uklanjanje podočnjaka', category: 'Lice', slug: 'podocnjaci' },
+  { name: 'Uklanjanje podbratka', category: 'Lice', slug: 'podbradak' },
+  { name: 'Povećavanje usana filerima', category: 'Lice', slug: 'usne-fileri' },
+  { name: 'Estetika i kozmetologija', category: 'Lice', slug: 'estetika-kozmetologija' },
   { name: 'Anti celulitni tretmani', category: 'Tijelo', slug: 'celulit' },
   { name: 'Tretmani mršavljenja', category: 'Tijelo', slug: 'mrsavljenje' },
-  { name: 'Trajno uklanjanje dlačica', category: 'Tijelo', slug: 'uklanjanje-dlacica' },
+  { name: 'Trajno uklanjanje dlačica', category: 'Tijelo', slug: 'dlacice' },
+  { name: 'Tretmani jačanja mišića', category: 'Tijelo', slug: 'jacanje-misica' },
+  { name: 'Podizanje i učvršćivanje stražnjice', category: 'Tijelo', slug: 'straznjica' },
   { name: 'Terapija ozljeda', category: 'Zdravstveni tretman', slug: 'terapija-ozljeda' },
   { name: 'Vitaminske infuzije', category: 'Zdravstveni tretman', slug: 'vitaminske-infuzije' },
-  { name: 'Test intolerancije na hranu', category: 'Zdravstveni tretman', slug: 'intolerancija' },
-  { name: 'Test na alergije', category: 'Zdravstveni tretman', slug: 'alergije' },
+  { name: 'Test intolerancije na hranu', category: 'Zdravstveni tretman', slug: 'test-intolerancija' },
+  { name: 'Test na alergije', category: 'Zdravstveni tretman', slug: 'test-alergije' },
+  { name: 'Opća medicina i dijagnostika', category: 'Zdravstveni tretman', slug: 'opca-medicina' },
+  { name: 'Medicinske intervencije i terapije', category: 'Zdravstveni tretman', slug: 'medicinske-intervencije' },
+  { name: 'Fizikalna i regenerativna terapija', category: 'Zdravstveni tretman', slug: 'fizikalna-terapija' },
+  { name: 'Nutricionizam i savjetovanje', category: 'Zdravstveni tretman', slug: 'nutricionizam' },
 ];
 
 // Duplicated once so the strip can loop seamlessly: when it scrolls past
@@ -18,13 +28,15 @@ const treatments = [
 const loopTreatments = [...treatments, ...treatments];
 
 const AUTOPLAY_SPEED = 0.6; // pixels per animation frame
+const DRAG_THRESHOLD = 5; // px of movement before a click becomes a drag
 
 export default function Treatments() {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
   const isDraggingRef = useRef(false);
   const isPausedRef = useRef(false);
-  const dragStartRef = useRef({ x: 0, scrollLeft: 0 });
+  const hasDraggedRef = useRef(false);
+  const dragStartRef = useRef({ x: 0, scrollLeft: 0, pointerId: null });
   const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
@@ -67,24 +79,51 @@ export default function Treatments() {
     return () => cancelAnimationFrame(frameId);
   }, []);
 
+  // Only starts a real "drag" (and captures the pointer) once the mouse
+  // has moved past a small threshold. A plain click never gets captured,
+  // so the <a> tag's native navigation fires normally on both desktop
+  // and mobile - this is what was broken before (pointer capture on
+  // every mousedown, even a simple click, interfered with navigation on
+  // desktop mouse; touch happened to tolerate it, which is why it only
+  // looked broken on desktop).
   function handlePointerDown(e) {
     const track = trackRef.current;
-    isDraggingRef.current = true;
-    setIsDragging(true);
-    dragStartRef.current = { x: e.clientX, scrollLeft: track.scrollLeft };
-    track.setPointerCapture(e.pointerId);
+    dragStartRef.current = { x: e.clientX, scrollLeft: track.scrollLeft, pointerId: e.pointerId };
+    hasDraggedRef.current = false;
   }
 
   function handlePointerMove(e) {
-    if (!isDraggingRef.current) return;
     const track = trackRef.current;
-    const delta = e.clientX - dragStartRef.current.x;
-    track.scrollLeft = dragStartRef.current.scrollLeft - delta;
+    const { x, scrollLeft, pointerId } = dragStartRef.current;
+    if (pointerId === null) return;
+
+    const delta = e.clientX - x;
+
+    if (!isDraggingRef.current) {
+      if (Math.abs(delta) < DRAG_THRESHOLD) return;
+      isDraggingRef.current = true;
+      hasDraggedRef.current = true;
+      setIsDragging(true);
+      track.setPointerCapture(pointerId);
+    }
+
+    track.scrollLeft = scrollLeft - delta;
   }
 
   function handlePointerUp() {
     isDraggingRef.current = false;
     setIsDragging(false);
+    dragStartRef.current.pointerId = null;
+  }
+
+  // If the pointer actually dragged, swallow the click that follows so
+  // it doesn't navigate. A plain click (no movement) passes through.
+  function handleClickCapture(e) {
+    if (hasDraggedRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      hasDraggedRef.current = false;
+    }
   }
 
   return (
@@ -113,6 +152,7 @@ export default function Treatments() {
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerLeave={handlePointerUp}
+          onClickCapture={handleClickCapture}
           onMouseEnter={() => (isPausedRef.current = true)}
           onMouseLeave={() => (isPausedRef.current = false)}
         >
