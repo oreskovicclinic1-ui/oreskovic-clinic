@@ -7,7 +7,7 @@ import Pricing from "../Pricing/Pricing";
 import Process from "../Process/Process";
 import Results from "../Results/Results";
 import Offer from "../Offer/Offer";
-import VideoShowcase from "../VideoShowcase/VideoShowCase";
+// import VideoShowcase from "../VideoShowcase/VideoShowCase";
 import Testimonials from "../Testimonials/Testimonials";
 import FinalCta from "../FinalCta/Finalcta";
 
@@ -24,7 +24,7 @@ function Home() {
       <Process/>
       <Results />     
       <Offer />
-      <VideoShowcase/>
+      {/* <VideoShowcase/> */}
       <Testimonials/>
       <FinalCta/>
     </>

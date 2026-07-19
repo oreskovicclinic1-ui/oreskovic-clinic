@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './AboutClinic.css';
 import pic0 from '../../assets/pic1.webp';
-import pic1 from '../../assets/about-clinic1.webp';
+import pic1 from '/treatments/podbradak.webp';
 
 
 const features = [
