@@ -28,7 +28,6 @@ const genericFaq = [
     answer:
       'Ne — svi naši tretmani su neinvazivni, bez perioda oporavka. Možete se odmah vratiti svojim svakodnevnim aktivnostima.',
   },
-
 ];
 
 export const treatments = {
@@ -37,8 +36,10 @@ export const treatments = {
     slug: 'test-intolerancija',
     name: 'Test intolerancije na hranu',
     category: 'Zdravstvene usluge',
-    heroImage: '/treatments/test-intolerancija.webp',
-    shortBenefit: 'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno, bez igle.',
+    heroImage: '/treatments/intolerancija.webp',
+    pricingImage: '/treatments/test-intolerancija-pricing.webp',
+    shortBenefit:
+      'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno i bez igle. Test traje samo 20 minuta, a rezultati su gotovi odmah. Uz to dobivate i uvid u status vitamina i minerala u organizmu.',
     description:
       'Test intolerancije na hranu brzo i jednostavno otkriva koje namirnice biste trebali izbaciti iz prehrane kako biste smanjili umor, probavne smetnje, nadutost i manjak energije. Tretman izvodimo Bicom Body Check 2 aparatom, koji uz intolerancije pokazuje i koje vitamine i minerale vašem tijelu nedostaje. Postupak je potpuno neinvazivan — bez igala — a rezultati su gotovi već za 20 minuta.',
     highlights: [
@@ -78,8 +79,10 @@ export const treatments = {
     slug: 'test-alergije',
     name: 'Test na alergije',
     category: 'Zdravstvene usluge',
-    heroImage: '/treatments/test-alergije.webp',
-    shortBenefit: 'Otkrijte na što vaše tijelo reagira — bez vađenja krvi, rezultati odmah.',
+    heroImage: '/treatments/alergije.webp',
+    pricingImage: '/treatments/test-alergije-pricing.webp',
+    shortBenefit:
+      'Otkrijte na što vaše tijelo reagira — bez vađenja krvi, potpuno bezbolno. Testiranje obuhvaća preko 300 potencijalnih alergena iz okoline i prehrane. Rezultati su dostupni odmah, uz jasne preporuke za dalje korake.',
     description:
       'Test na alergije pomaže otkriti na koje tvari iz okoline ili prehrane vaše tijelo može reagirati, uzrokujući simptome poput kihanja, svrbeža očiju, začepljenog nosa, umora ili kožnih reakcija. Ako godinama imate simptome čiji uzrok ne znate, ovaj test daje konkretan uvid i jasne smjernice — bez vađenja krvi, u samo 20 minuta.',
     highlights: [
@@ -105,7 +108,9 @@ export const treatments = {
     name: 'Terapija ozljeda',
     category: 'Zdravstvene usluge',
     heroImage: '/treatments/terapija-ozljeda.webp',
-    shortBenefit: 'Brži oporavak i manje boli, bez igala i bez perioda mirovanja.',
+    pricingImage: '/treatments/terapija-ozljeda-pricing.webp',
+    shortBenefit:
+      'Brži oporavak i manje boli, bez igala i bez perioda mirovanja. Individualnim pristupom pomažemo kod širokog spektra ozljeda mekih tkiva i zglobova. Pogodno je i za profesionalne sportaše i za rekreativce.',
     description:
       'Više stotina zadovoljnih pacijenata prošlo je kroz naše ordinacije s raznim ozljedama — od petnog trna, teniskog lakta i skakačkog koljena, do uganuća, ruptura i istegnuća. Naš stručni tim individualnim pristupom pomaže u rješavanju širokog spektra ozljeda mekih tkiva i zglobova.',
     highlights: [
@@ -141,7 +146,9 @@ export const treatments = {
     name: 'Vitaminske infuzije',
     category: 'Zdravstvene usluge',
     heroImage: '/treatments/vitaminske-infuzije.webp',
-    shortBenefit: 'Vitamini i minerali direktno u krvotok, uz 100% iskoristivost.',
+    pricingImage: '/treatments/vitaminske-infuzije-pricing.webp',
+    shortBenefit:
+      'Vitamini i minerali direktno u krvotok, uz 100% iskoristivost hranjivih tvari. Idealno za brži oporavak, jačanje imuniteta i više energije. Svaka terapija prilagođena je individualnim potrebama, uz stručnu konzultaciju prije tretmana.',
     description:
       'Vitaminske infuzije direktno unose vitamine, minerale, aminokiseline i antioksidanse u krvotok, zaobilazeći probavni sustav. Za razliku od oralne primjene, intravenozni put omogućuje trenutnu apsorpciju i maksimalnu iskoristivost hranjivih tvari, uz istovremenu hidrataciju i ravnotežu elektrolita.',
     highlights: [
@@ -173,8 +180,10 @@ export const treatments = {
     slug: 'dlacice',
     name: 'Trajno uklanjanje dlačica',
     category: 'Tijelo',
-    heroImage: '/treatments/dlacice.webp',
-    shortBenefit: 'Zauvijek bez dlačica — potpuno bezbolno, za sve tipove kože.',
+    heroImage: '/treatments/uklanjanje-dlacica.webp',
+    pricingImage: '/treatments/dlacice-pricing.webp',
+    shortBenefit:
+      'Zauvijek bez dlačica — potpuno bezbolno, za sve tipove kože. Diodni laser sa tri valne duljine uklanja i svijetle i tamne dlačice. Većini pacijenata dlačice počinju otpadati već nakon prvog tretmana.',
     description:
       'Tretmani trajnog uklanjanja dlačica u našim ordinacijama su potpuno bezbolni i ugodni. Nakon tretmana nema uraslih dlačica niti boli, koža je glađa i mekša, a većini pacijenata dlačice počinju otpadati već nakon prvog tretmana.',
     highlights: [
@@ -205,7 +214,9 @@ export const treatments = {
     name: 'Tretmani mršavljenja',
     category: 'Tijelo',
     heroImage: '/treatments/mrsavljenje.webp',
-    shortBenefit: 'Do željene forme bez napora — rezultat garantiramo povratom novca.',
+    pricingImage: '/treatments/mrsavljenje-pricing.webp',
+    shortBenefit:
+      'Do željene forme bez napora — potpuno bezbolno i neinvazivno. Masne naslage uklanjamo sa svih dijelova tijela, bez perioda oporavka. Rezultat garantiramo povratom novca.',
     description:
       'Sinergija naših aparata i jedinstvenih tehnika sigurno će vas dovesti do željene forme bez napora. Tretmani su potpuno bezbolni, ugodni, neinvazivni i bez nuspojava — zbog neinvazivnosti, u jednom danu se može odraditi i veći broj tretmana. Masne naslage i višak kože mogu se ukloniti sa svih dijelova tijela: trbuh, bokovi, donja leđa, noge, ruke.',
     highlights: [
@@ -235,7 +246,9 @@ export const treatments = {
     name: 'Anti celulitni tretmani',
     category: 'Tijelo',
     heroImage: '/treatments/celulit.webp',
-    shortBenefit: 'Uklanjanje celulita i to posebice na području nogu i stražnjice jedan od najčešćih estetskih tretamana. Rezultat garantiramo povratom novca.',
+    pricingImage: '/treatments/celulit-pricing.webp',
+    shortBenefit:
+      'Uklanjanje celulita, posebice na području nogu i stražnjice — jedan od naših najtraženijih estetskih tretmana. Uz zatezanje kože i podizanje stražnjice, rezultat garantiramo povratom novca.',
     description:
       'Sinergija naših aparata i jedinstvenih tehnika sigurno će vas riješiti celulita, zategnuti kožu i podignuti stražnjicu. Tretmani su potpuno bezbolni, ugodni, neinvazivni i bez nuspojava, a rezultat garantiramo povratom novca.',
     highlights: [
@@ -265,7 +278,9 @@ export const treatments = {
     name: 'Anti age tretmani',
     category: 'Lice',
     heroImage: '/treatments/anti-age.webp',
-    shortBenefit: 'Manje bora, više kolagena — mlađa, zategnuta koža bez igala.',
+    pricingImage: '/treatments/anti-age-pricing.webp',
+    shortBenefit:
+      'Manje bora, više kolagena — mlađa, zategnuta koža bez igala. Djeluje na lice, vrat i dekolte, uz dubinsku hidrataciju kože. Dostupno u Zagrebu i Opatiji, uz rezultat garantiran povratom novca.',
     description:
       'Koža se dubinski hidratizira, zateže i obnavlja. Uklanjaju se bore, podiže se tonus kože i potiče proizvodnja kolagena — sa svih dijelova lica, vrata i dekoltea. Tretman je potpuno bezbolan, ugodan, neinvazivan i bez nuspojava, dostupan u Zagrebu i Opatiji.',
     highlights: [
@@ -295,8 +310,10 @@ export const treatments = {
     slug: 'podbradak',
     name: 'Uklanjanje podbratka',
     category: 'Lice',
-    heroImage: '/treatments/podbradak.webp',
-    shortBenefit: 'Definisana kontura lica, bez igle i bez liposukcije.',
+    heroImage: '/treatments/uklanjanje-podbratka.webp',
+    pricingImage: '/treatments/podbradak-pricing.webp',
+    shortBenefit:
+      'Definisana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka.',
     description:
       'Indiba tretman uklanjanja podbratka, za razliku od liposukcije, predstavlja u potpunosti neinvazivan postupak bez igle. Sinergija naših aparata zateže kožu, uklanja masne naslage i bore na području podbratka i/ili dekoltea, uz rezultat garantiran povratom novca.',
     highlights: [
@@ -326,7 +343,9 @@ export const treatments = {
     name: 'Uklanjanje podočnjaka',
     category: 'Lice',
     heroImage: '/treatments/podocnjaci.webp',
-    shortBenefit: 'Svježiji pogled — manje tamnih krugova i vrećica, bez igle.',
+    pricingImage: '/treatments/podocnjaci-pricing.webp',
+    shortBenefit:
+      'Svježiji pogled — manje tamnih krugova i vrećica, bez igle. Kombinacija zagrijavanja i stimulacije kolagena smanjuje oteklinu i tamne krugove. Uspjeh bilježimo kod čak 80% naših pacijenata.',
     description:
       'Indiba tretman pokazao se kao idealan neinvazivan odgovor na pitanje kako se riješiti podočnjaka. Bilo da vas muče vrećice ispod očiju, bore ili tamna boja, tretman je potpuno ugodan, neinvazivan, bezbolan i bez nuspojava, sa uspjehom kod 80% pacijenata.',
     highlights: [
@@ -356,7 +375,9 @@ export const treatments = {
     name: 'Tretmani botoksom',
     category: 'Lice',
     heroImage: '/treatments/botox.webp',
-    shortBenefit: 'Glatka koža bez mimičnih bora, prirodan i suptilan rezultat.',
+    pricingImage: '/treatments/botox-pricing.webp',
+    shortBenefit:
+      'Glatka koža bez mimičnih bora, uz prirodan i suptilan rezultat. Zahvat traje do 20 minuta, a prvi efekti vidljivi su već za nekoliko dana. Rezultati traju 4 do 6 mjeseci. (generički)',
     description:
       'Aplikacija botoksa opušta ciljane mišiće lica, uklanjajući mimične bore (čelo, područje oko očiju, između obrva) uz prirodan, suptilan rezultat — bez "zamrznutog" izgleda. Cijena ovisi o broju tretiranih zona. (generički)',
     highlights: [
@@ -381,7 +402,9 @@ export const treatments = {
     name: 'Povećavanje usana dermalnim filerima',
     category: 'Lice',
     heroImage: '/treatments/usne-fileri.webp',
-    shortBenefit: 'Punije, hidratizirane usne, prirodnog oblika.',
+    pricingImage: '/treatments/usne-fileri-pricing.webp',
+    shortBenefit:
+      'Punije, hidratizirane usne prirodnog oblika. Koristimo filere na bazi hijaluronske kiseline, uz trenutno vidljiv rezultat. Efekat traje 6 do 12 mjeseci. (generički)',
     description:
       'Oblikovanje i hidratacija usana dermalnim filerima na bazi hijaluronske kiseline — prirodne tvari koju tijelo samo proizvodi. Rezultat je punija, simetrična i hidratizirana usna linija, prilagođena crtama vašeg lica. (generički)',
     highlights: [
@@ -406,7 +429,9 @@ export const treatments = {
     name: 'Tretmani jačanja mišića',
     category: 'Tijelo',
     heroImage: '/treatments/jacanje-misica.webp',
-    shortBenefit: 'Jači, definisaniji mišići — bez sati u teretani.',
+    pricingImage: '/treatments/jacanje-misica-pricing.webp',
+    shortBenefit:
+      'Jači, definisaniji mišići — bez sati provedenih u teretani. Elektromagnetna stimulacija izaziva kontrakcije koje se ne mogu postići voljnim vježbanjem. Djeluje na trbuh, stražnjicu, ruke i noge. (generički)',
     description:
       'Elektromagnetna stimulacija potiče intenzivne mišićne kontrakcije koje se ne mogu postići voljnim vježbanjem, ubrzavajući izgradnju mišićne mase i definiciju tretiranog područja. (generički)',
     highlights: [
@@ -431,7 +456,9 @@ export const treatments = {
     name: 'Tretmani podizanja i učvršćivanja stražnjice',
     category: 'Tijelo',
     heroImage: '/treatments/straznjica.webp',
-    shortBenefit: 'Podignuta, oblikovana i učvršćena stražnjica, bez operacije.',
+    pricingImage: '/treatments/straznjica-pricing.webp',
+    shortBenefit:
+      'Podignuta, oblikovana i učvršćena stražnjica, bez operativnog zahvata. Kombinacija mišićne stimulacije i zatezanja kože daje vidljive rezultate kroz seriju tretmana. Bez perioda oporavka, odmah se vraćate svakodnevnim aktivnostima. (generički)',
     description:
       'Kombinacija elektromagnetne stimulacije mišića i zatezanja kože oblikuje, podiže i učvršćuje stražnjicu, bez kirurškog zahvata i bez perioda oporavka. (generički)',
     highlights: [

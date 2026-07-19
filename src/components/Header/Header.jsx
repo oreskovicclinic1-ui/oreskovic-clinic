@@ -14,14 +14,14 @@ const t = {
   tijelo: 'Tijelo',
   antiAge: 'Anti age tretmani',
   botox: 'Botox',
-  dermalniFileri: 'Dermalni fileri',
-  skinBoosteri: 'Skin boosteri',
-  hydrafacial: 'Hydrafacial',
+  usneFileri: 'Povećavanje usana filerima',
   podocnjaci: 'Uklanjanje podočnjaka',
   podbradak: 'Uklanjanje podbratka',
   celulit: 'Anti celulitni tretmani',
   mrsavljenje: 'Tretmani mršavljenja',
   dlacice: 'Trajno uklanjanje dlačica',
+  jacanjeMisica: 'Tretmani jačanja mišića',
+  straznjica: 'Podizanje i učvršćivanje stražnjice',
   terapijaOzljeda: 'Terapija ozljeda',
   vitaminskeInfuzije: 'Vitaminske infuzije',
   testIntolerancije: 'Test intolerancije na hranu',
@@ -71,24 +71,24 @@ export default function Header() {
                     <span className="header-dropdown-subheading">{t.lice}</span>
                     <a href="/tretmani/anti-age">{t.antiAge}</a>
                     <a href="/tretmani/botox">{t.botox}</a>
-                    <a href="/tretmani/dermalni-fileri">{t.dermalniFileri}</a>
-                    <a href="/tretmani/skin-boosteri">{t.skinBoosteri}</a>
-                    <a href="/tretmani/hydrafacial">{t.hydrafacial}</a>
-                    <a href="/tretmani/uklanjanje-podocnjaka">{t.podocnjaci}</a>
-                    <a href="/tretmani/uklanjanje-podbratka">{t.podbradak}</a>
+                    <a href="/tretmani/podocnjaci">{t.podocnjaci}</a>
+                    <a href="/tretmani/podbradak">{t.podbradak}</a>
+                    <a href="/tretmani/usne-fileri">{t.usneFileri}</a>
 
                     <span className="header-dropdown-subheading">{t.tijelo}</span>
                     <a href="/tretmani/celulit">{t.celulit}</a>
                     <a href="/tretmani/mrsavljenje">{t.mrsavljenje}</a>
-                    <a href="/tretmani/uklanjanje-dlacica">{t.dlacice}</a>
+                    <a href="/tretmani/dlacice">{t.dlacice}</a>
+                    <a href="/tretmani/jacanje-misica">{t.jacanjeMisica}</a>
+                    <a href="/tretmani/straznjica">{t.straznjica}</a>
                   </div>
 
                   <div className="header-dropdown-column">
                     <span className="header-dropdown-heading">{t.zdravstveni}</span>
                     <a href="/tretmani/terapija-ozljeda">{t.terapijaOzljeda}</a>
                     <a href="/tretmani/vitaminske-infuzije">{t.vitaminskeInfuzije}</a>
-                    <a href="/tretmani/intolerancija">{t.testIntolerancije}</a>
-                    <a href="/tretmani/alergije">{t.testAlergije}</a>
+                    <a href="/tretmani/test-intolerancija">{t.testIntolerancije}</a>
+                    <a href="/tretmani/test-alergije">{t.testAlergije}</a>
                   </div>
                 </div>
               </div>
@@ -141,22 +141,22 @@ export default function Header() {
               <span className="header-dropdown-subheading">{t.lice}</span>
               <a href="/tretmani/anti-age" onClick={closeMenus}>{t.antiAge}</a>
               <a href="/tretmani/botox" onClick={closeMenus}>{t.botox}</a>
-              <a href="/tretmani/dermalni-fileri" onClick={closeMenus}>{t.dermalniFileri}</a>
-              <a href="/tretmani/skin-boosteri" onClick={closeMenus}>{t.skinBoosteri}</a>
-              <a href="/tretmani/hydrafacial" onClick={closeMenus}>{t.hydrafacial}</a>
-              <a href="/tretmani/uklanjanje-podocnjaka" onClick={closeMenus}>{t.podocnjaci}</a>
-              <a href="/tretmani/uklanjanje-podbratka" onClick={closeMenus}>{t.podbradak}</a>
+              <a href="/tretmani/podocnjaci" onClick={closeMenus}>{t.podocnjaci}</a>
+              <a href="/tretmani/podbradak" onClick={closeMenus}>{t.podbradak}</a>
+              <a href="/tretmani/usne-fileri" onClick={closeMenus}>{t.usneFileri}</a>
 
               <span className="header-dropdown-subheading">{t.tijelo}</span>
               <a href="/tretmani/celulit" onClick={closeMenus}>{t.celulit}</a>
               <a href="/tretmani/mrsavljenje" onClick={closeMenus}>{t.mrsavljenje}</a>
-              <a href="/tretmani/uklanjanje-dlacica" onClick={closeMenus}>{t.dlacice}</a>
+              <a href="/tretmani/dlacice" onClick={closeMenus}>{t.dlacice}</a>
+              <a href="/tretmani/jacanje-misica" onClick={closeMenus}>{t.jacanjeMisica}</a>
+              <a href="/tretmani/straznjica" onClick={closeMenus}>{t.straznjica}</a>
 
               <span className="header-dropdown-heading">{t.zdravstveni}</span>
               <a href="/tretmani/terapija-ozljeda" onClick={closeMenus}>{t.terapijaOzljeda}</a>
               <a href="/tretmani/vitaminske-infuzije" onClick={closeMenus}>{t.vitaminskeInfuzije}</a>
-              <a href="/tretmani/intolerancija" onClick={closeMenus}>{t.testIntolerancije}</a>
-              <a href="/tretmani/alergije" onClick={closeMenus}>{t.testAlergije}</a>
+              <a href="/tretmani/test-intolerancija" onClick={closeMenus}>{t.testIntolerancije}</a>
+              <a href="/tretmani/test-alergije" onClick={closeMenus}>{t.testAlergije}</a>
             </div>
           )}
         </div>
