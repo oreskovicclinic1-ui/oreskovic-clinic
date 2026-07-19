@@ -150,7 +150,7 @@ export default function CjenikPage() {
                   style={{ animationDelay: `${(index % 12) * 0.04}s` }}
                   onClick={() => openCategory(category.id)}
                 >
-                  <img src={`/pricing/${category.id}.webp`} alt={category.label} loading="lazy" className="cjenik-card-image" />
+                  <img src={`/treatments/${category.id}.webp`} alt={category.label} loading="lazy" className="cjenik-card-image" />
                   <div className="cjenik-card-overlay"></div>
                   {category.badge && <span className="cjenik-card-badge">{category.badge}</span>}
                   <div className="cjenik-card-footer">
@@ -176,7 +176,7 @@ export default function CjenikPage() {
             </button>
 
             <div className="cjenik-detail-image">
-              <img src={`/pricing/${selectedCategory.id}.webp`} alt={selectedCategory.label} />
+              <img src={`/treatments/${selectedCategory.id}.webp`} alt={selectedCategory.label} />
             </div>
 
             <div className="cjenik-detail-content">

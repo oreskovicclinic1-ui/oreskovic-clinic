@@ -36,7 +36,7 @@ export const treatments = {
     slug: 'test-intolerancija',
     name: 'Test intolerancije na hranu',
     category: 'Zdravstvene usluge',
-    heroImage: '/treatments/intolerancija.webp',
+    heroImage: '/treatments/test-intolerancija.webp',
     pricingImage: '/treatments/test-intolerancija-pricing.webp',
     shortBenefit:
       'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno i bez igle. Test traje samo 20 minuta, a rezultati su gotovi odmah. Uz to dobivate i uvid u status vitamina i minerala u organizmu.',
@@ -79,7 +79,7 @@ export const treatments = {
     slug: 'test-alergije',
     name: 'Test na alergije',
     category: 'Zdravstvene usluge',
-    heroImage: '/treatments/alergije.webp',
+    heroImage: '/treatments/test-alergije.webp',
     pricingImage: '/treatments/test-alergije-pricing.webp',
     shortBenefit:
       'Otkrijte na što vaše tijelo reagira — bez vađenja krvi, potpuno bezbolno. Testiranje obuhvaća preko 300 potencijalnih alergena iz okoline i prehrane. Rezultati su dostupni odmah, uz jasne preporuke za dalje korake.',
@@ -180,7 +180,7 @@ export const treatments = {
     slug: 'dlacice',
     name: 'Trajno uklanjanje dlačica',
     category: 'Tijelo',
-    heroImage: '/treatments/uklanjanje-dlacica.webp',
+    heroImage: '/treatments/dlacice.webp',
     pricingImage: '/treatments/dlacice-pricing.webp',
     shortBenefit:
       'Zauvijek bez dlačica — potpuno bezbolno, za sve tipove kože. Diodni laser sa tri valne duljine uklanja i svijetle i tamne dlačice. Većini pacijenata dlačice počinju otpadati već nakon prvog tretmana.',
@@ -310,7 +310,7 @@ export const treatments = {
     slug: 'podbradak',
     name: 'Uklanjanje podbratka',
     category: 'Lice',
-    heroImage: '/treatments/uklanjanje-podbratka.webp',
+    heroImage: '/treatments/podbradak.webp',
     pricingImage: '/treatments/podbradak-pricing.webp',
     shortBenefit:
       'Definisana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka.',

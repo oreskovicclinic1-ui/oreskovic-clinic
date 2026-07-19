@@ -3,11 +3,6 @@ import './Treatments.css';
 
 const treatments = [
   { name: 'Anti age tretmani', category: 'Lice', slug: 'anti-age' },
-//   { name: 'Botox', category: 'Lice', slug: 'botox' },
-//   { name: 'Dermalni fileri', category: 'Lice', slug: 'dermalni-fileri' },
-//   { name: 'Skin boosteri', category: 'Lice', slug: 'skin-boosteri' },
-//   { name: 'Hydrafacial', category: 'Lice', slug: 'hydrafacial' },
-//   { name: 'Uklanjanje podočnjaka', category: 'Lice', slug: 'uklanjanje-podocnjaka' },
   { name: 'Uklanjanje podbratka', category: 'Lice', slug: 'uklanjanje-podbratka' },
   { name: 'Anti celulitni tretmani', category: 'Tijelo', slug: 'celulit' },
   { name: 'Tretmani mršavljenja', category: 'Tijelo', slug: 'mrsavljenje' },
