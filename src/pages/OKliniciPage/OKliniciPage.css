@@ -1,0 +1,567 @@
+/* Reveal on scroll - standard site pattern */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-2 {
+  transition-delay: 0.15s;
+}
+
+.is-visible .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.oklinici-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 92vh;
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(182, 150, 100, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 85% 85%, rgba(217, 169, 160, 0.16) 0%, transparent 55%),
+    var(--color-charcoal);
+  margin-top: -110px;
+  padding-top: calc(var(--section-padding-y) + 110px);
+  padding-bottom: 110px;
+}
+
+.oklinici-hero-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+}
+
+.oklinici-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.55;
+  animation: oklinici-drift 18s ease-in-out infinite;
+}
+
+.oklinici-blob-1 {
+  width: 380px;
+  height: 380px;
+  top: -100px;
+  left: 5%;
+  background: var(--color-gold);
+}
+
+.oklinici-blob-2 {
+  width: 340px;
+  height: 340px;
+  bottom: -100px;
+  right: 5%;
+  background: var(--color-champagne);
+  animation-duration: 22s;
+  animation-delay: -8s;
+}
+
+@keyframes oklinici-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oklinici-blob {
+    animation: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .oklinici-hero-blobs {
+    display: block;
+  }
+}
+
+/* Mobile-first: plain block stacking, no grid/flex risk on the outer
+   layout. Two-column only turns on at desktop. */
+
+.oklinici-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.oklinici-content {
+  color: var(--color-ivory);
+  margin-bottom: 40px;
+  animation: oklinici-fade-in 0.9s ease both;
+}
+
+.oklinici-hero-visual {
+  animation: oklinici-fade-in 0.9s ease both;
+  animation-delay: 0.15s;
+}
+
+@keyframes oklinici-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oklinici-content,
+  .oklinici-hero-visual {
+    animation: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .oklinici-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+  .oklinici-content {
+    margin-bottom: 0;
+  }
+}
+
+.oklinici-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.oklinici-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--color-ivory);
+  margin-bottom: 18px;
+}
+
+.oklinici-intro {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(248, 245, 240, 0.75);
+  margin-bottom: 24px;
+}
+
+.oklinici-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.oklinici-highlight-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background-color: rgba(248, 245, 240, 0.92);
+  border-radius: 999px;
+  padding: 8px 14px 8px 8px;
+}
+
+.oklinici-highlight-check {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .oklinici-title {
+    font-size: 44px;
+  }
+}
+
+/* Two overlapping photos - fade dissolves into the dark background at
+   the edges (transparent, not white, since this hero sits on charcoal
+   not ivory). */
+
+.oklinici-hero-visual {
+  position: relative;
+  width: 100%;
+  padding-bottom: 15%;
+}
+
+.oklinici-hero-image {
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.oklinici-hero-image-primary {
+  position: relative;
+  width: 78%;
+  height: 340px;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.oklinici-hero-image-secondary {
+  position: absolute;
+  right: 0;
+  bottom: -15%;
+  width: 45%;
+  height: 220px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}
+
+@media (min-width: 900px) {
+  .oklinici-hero-visual {
+    padding-bottom: 0;
+    height: 460px;
+  }
+
+  .oklinici-hero-image-primary {
+    width: 75%;
+    height: 100%;
+  }
+
+  .oklinici-hero-image-secondary {
+    width: 48%;
+    height: 60%;
+    bottom: -40px;
+  }
+}
+
+/* PRIČA KLINIKE - light section, text + photo */
+
+.oklinici-story {
+  background-color: var(--color-ivory);
+}
+
+.oklinici-story-image {
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.oklinici-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .oklinici-story-image img {
+    mask-image: linear-gradient(to right, black 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 75%, transparent 100%);
+  }
+}
+
+.oklinici-section-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.oklinici-section-kicker-center {
+  text-align: center;
+}
+
+.oklinici-story-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--color-charcoal);
+  margin-bottom: 18px;
+}
+
+.oklinici-story-title em {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.oklinici-story-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4A4644;
+}
+
+@media (min-width: 900px) {
+  .oklinici-story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .oklinici-story-image {
+    height: 420px;
+    margin-bottom: 0;
+  }
+
+  .oklinici-story-title {
+    font-size: 32px;
+  }
+}
+
+/* TEHNOLOGIJA */
+
+.oklinici-tech {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(182, 150, 100, 0.16) 0%, transparent 50%),
+    radial-gradient(circle at 10% 90%, rgba(217, 169, 160, 0.12) 0%, transparent 50%),
+    var(--color-charcoal);
+}
+
+.oklinici-tech .oklinici-section-kicker {
+  position: relative;
+  z-index: 1;
+}
+
+.oklinici-tech-title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--color-charcoal);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.oklinici-tech .oklinici-tech-title {
+  color: var(--color-ivory);
+}
+
+.oklinici-tech-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.oklinici-tech-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 18px;
+  overflow: hidden;
+  border-top: 3px solid var(--color-gold);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.oklinici-tech-card:hover {
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+.oklinici-tech-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.oklinici-tech-card:hover .oklinici-tech-image {
+  transform: scale(1.06);
+}
+
+.oklinici-tech-image-placeholder {
+  background: linear-gradient(160deg, var(--color-champagne) 0%, rgba(217, 189, 148, 0.4) 100%);
+}
+
+.oklinici-tech-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.55) 35%,
+    rgba(0, 0, 0, 0.1) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.oklinici-tech-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.oklinici-tech-tag {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+}
+
+.oklinici-tech-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-ivory);
+  margin-bottom: 8px;
+}
+
+.oklinici-tech-description {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(248, 245, 240, 0.85);
+}
+
+@media (min-width: 640px) {
+  .oklinici-tech-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .oklinici-tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* LOKACIJE */
+
+.oklinici-locations {
+  background-color: var(--color-ivory);
+}
+
+.oklinici-locations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.oklinici-location-card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(34, 31, 29, 0.08);
+  box-shadow: 0 14px 32px rgba(34, 31, 29, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.oklinici-location-card:hover {
+  box-shadow: 0 20px 44px rgba(34, 31, 29, 0.12);
+  transform: translateY(-3px);
+}
+
+.oklinici-location-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.oklinici-location-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: var(--color-champagne);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal);
+}
+
+.oklinici-location-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-charcoal);
+}
+
+.oklinici-location-address {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #4A4644;
+  margin-bottom: 6px;
+}
+
+.oklinici-location-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gold);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.oklinici-location-phone:hover {
+  text-decoration: underline;
+}
+
+.oklinici-location-map {
+  width: 100%;
+  height: 340px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 31, 29, 0.1);
+}
+
+.oklinici-location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .oklinici-locations-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .oklinici-location-map {
+    height: 380px;
+  }
+}

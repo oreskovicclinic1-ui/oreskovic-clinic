@@ -16,6 +16,7 @@ import CjenikPage from './pages/CjenikPage/CjenikPage';
 import TreatmentPage from './pages/TreatmentPage/TreatmentPage';
 import UspjesnaRezervacijaPage from './pages/UspjesnaRezervacijaPage/UspjesnaRezervacijaPage';
 import RezervacijaPage from './pages/RezervacijaPage/RezervacijaPage';
+import OKliniciPage from './pages/OKliniciPage/OKliniciPage';
 
 function App() {
 
@@ -34,6 +35,8 @@ function App() {
           <Route path="/tretmani/:slug" element={<TreatmentPage />} />
           <Route path="/rezervacija" element={<RezervacijaPage />} />
           <Route path="/uspesna-rezervacija" element={<UspjesnaRezervacijaPage />} />
+          <Route path="/o-klinici" element={<OKliniciPage />} />
+
 
       </Routes>
 
