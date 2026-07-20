@@ -71,9 +71,6 @@
   color: #B69664;
 }
 
-/* Invisible bridge sits flush against the trigger (no gap), so the mouse
-   never leaves a hoverable element while moving down into the menu. The
-   visible card is nested inside it, pushed down by padding-top. */
 .header-dropdown-bridge {
   position: absolute;
   top: 100%;

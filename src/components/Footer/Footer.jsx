@@ -4,9 +4,6 @@ import logo from '../../assets/logo-white.png';
 import { openCookieSettings } from '../../utils/privacyPreferences';
 import { Link, useNavigate } from 'react-router-dom';
 
-// Custom smooth scroll with a slower, controllable duration - CSS
-// scroll-behavior:smooth doesn't let us control speed, browsers just
-// pick something fast on their own.
 function easeInOutQuad(t) {
   return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 }
@@ -33,9 +30,6 @@ function performScroll(id) {
   requestAnimationFrame(step);
 }
 
-// After navigating to a different page, the target section doesn't
-// exist in the DOM yet until the new page finishes rendering - this
-// polls briefly until it appears, then scrolls.
 function scrollToIdWithRetry(id, attemptsLeft = 20) {
   const target = document.getElementById(id);
   if (target) {

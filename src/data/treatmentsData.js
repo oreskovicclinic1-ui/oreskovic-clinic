@@ -1,4 +1,4 @@
-// ---- TREATMENT CONTENT DATA ---------------------------------------------
+// ---- TREATMENT CONTENT DATA ----------
 // One entry per treatment page. `pricingId` links to the matching entry
 // in pricingData.js so the price section always stays in sync with the
 // Cjenik page — never duplicate prices here.

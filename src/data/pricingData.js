@@ -1,4 +1,4 @@
-// ---- PRICING DATA -------------------------------------------------------
+// ---- PRICING DATA --------
 // Single source of truth for all prices on the site (Cjenik page +
 // individual treatment pages both import from here).
 //

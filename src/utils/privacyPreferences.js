@@ -15,10 +15,6 @@ export function getStoredConsent() {
   }
 }
 
-// Pushes the user's choice into Google Consent Mode v2. Requires the
-// default-denied gtag('consent', 'default', ...) snippet to already be
-// running in index.html (before gtag.js/GA/Ads scripts load) - this
-// function only updates it afterwards based on the real choice.
 export function applyConsentToGtag(consent) {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
 
@@ -50,8 +46,6 @@ export function saveConsent(consent) {
   return payload;
 }
 
-// Call this from anywhere (e.g. the footer's "Postavke kolačića" button)
-// to reopen the preferences panel.
 export function openCookieSettings() {
   window.dispatchEvent(new CustomEvent('open-cookie-settings'));
 }

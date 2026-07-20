@@ -2,9 +2,6 @@ import './Hero.css';
 
 import hero1 from '../../assets/hero1.jpg';
 
-// Custom smooth scroll with a slower, controllable duration - CSS
-// scroll-behavior:smooth doesn't let us control speed, browsers just
-// pick something fast on their own.
 function scrollToSection(e, targetId) {
   e.preventDefault();
   const target = document.getElementById(targetId);

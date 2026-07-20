@@ -13,9 +13,6 @@
   z-index: 0;
 }
 
-/* Milky-beige wash, solid-ish on the left where the text sits, fading
-   to fully transparent by about the halfway point so the photo shows
-   through untouched on the right. */
 .offer-gradient {
   position: absolute;
   inset: 0;

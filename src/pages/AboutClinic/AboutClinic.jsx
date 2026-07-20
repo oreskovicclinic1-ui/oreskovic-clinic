@@ -3,9 +3,6 @@ import './AboutClinic.css';
 import pic0 from '../../assets/pic1.webp';
 import pic1 from '/treatments/podbradak.webp';
 
-// Custom smooth scroll with a slower, controllable duration - CSS
-// scroll-behavior:smooth doesn't let us control speed, browsers just
-// pick something fast on their own.
 function scrollToSection(e, targetId) {
   e.preventDefault();
   const target = document.getElementById(targetId);
