@@ -6,10 +6,6 @@ import pricing2mobile from '../../assets/pricing2mobile.webp';
 import { getCategoryById } from '../../data/pricingData';
 import './Pricing.css';
 
-// Pulls live from pricingData.js - only choose WHICH categories appear
-// in each panel here, by id. Prices/labels/tiers always stay in sync
-// with the Cjenik page and individual treatment pages automatically.
-
 const healthIds = ['test-intolerancija', 'test-alergije', 'terapija-ozljeda', 'vitaminske-infuzije'];
 const aestheticIds = ['podbradak', 'mrsavljenje'];
 
@@ -23,9 +19,6 @@ function buildPanel({ title, imageMobile, imageDesktop, ids }) {
     moreInfoHref: `/tretmani/${ids[0]}`,
     treatments: categories.map((category) => ({
       name: category.label,
-      // These panels only ever show 'simple' categories (flat tier
-      // list). If a 'grouped' category is ever added to the ids above,
-      // fall back to an empty tier list rather than crashing.
       tiers: category.kind === 'simple' ? category.tiers : [],
     })),
   };

@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Testimonials.css';
 
-// To add a new review later: just add one line here.
 const testimonials = [
   {
     name: 'Monika Mamić',

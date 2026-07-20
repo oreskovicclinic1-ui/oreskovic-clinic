@@ -23,8 +23,6 @@ const treatments = [
   { name: 'Nutricionizam i savjetovanje', category: 'Zdravstveni tretman', slug: 'nutricionizam' },
 ];
 
-// Duplicated once so the strip can loop seamlessly: when it scrolls past
-// the first full set, we silently jump back by exactly that width.
 const loopTreatments = [...treatments, ...treatments];
 
 const AUTOPLAY_SPEED = 0.6; // pixels per animation frame
@@ -79,13 +77,6 @@ export default function Treatments() {
     return () => cancelAnimationFrame(frameId);
   }, []);
 
-  // Only starts a real "drag" (and captures the pointer) once the mouse
-  // has moved past a small threshold. A plain click never gets captured,
-  // so the <a> tag's native navigation fires normally on both desktop
-  // and mobile - this is what was broken before (pointer capture on
-  // every mousedown, even a simple click, interfered with navigation on
-  // desktop mouse; touch happened to tolerate it, which is why it only
-  // looked broken on desktop).
   function handlePointerDown(e) {
     const track = trackRef.current;
     dragStartRef.current = { x: e.clientX, scrollLeft: track.scrollLeft, pointerId: e.pointerId };
@@ -116,8 +107,6 @@ export default function Treatments() {
     dragStartRef.current.pointerId = null;
   }
 
-  // If the pointer actually dragged, swallow the click that follows so
-  // it doesn't navigate. A plain click (no movement) passes through.
   function handleClickCapture(e) {
     if (hasDraggedRef.current) {
       e.preventDefault();

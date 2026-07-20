@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Results.css';
 
-// To add a new result later: just add one line here. "title" is the only
-// text we render — the photo itself already shows before/after and the
-// number of treatments, so no need to repeat that.
 const results = [
   { title: 'Uklanjanje podočnjaka', image: '/results/01.webp' },
   { title: 'Tretmani mršavljenja', image: '/results/02.webp' },
@@ -13,8 +10,6 @@ const results = [
   { title: 'Tretmani mršavljenja', image: '/results/06.webp' },
 ];
 
-// Duplicated once so the strip can loop seamlessly, same technique as
-// the Treatments carousel.
 const loopResults = [...results, ...results];
 
 const AUTOPLAY_SPEED = 0.6;

@@ -21,10 +21,6 @@
   z-index: 0;
 }
 
-/* Wider, softer fade on the left/right - the photo now dissolves into
-   the page background more gradually. On mobile the fade is dropped
-   entirely (see media query below), since the edges are too close
-   together on a narrow screen for it to look right. */
 .results-page-hero-wash {
   position: absolute;
   inset: 0;

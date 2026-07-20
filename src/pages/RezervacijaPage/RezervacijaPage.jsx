@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { categories } from '../../data/pricingData';
 import './RezervacijaPage.css';
 
-// TODO: wire this up to a real submission service (Formspree, EmailJS,
-// etc.) once one is chosen - for now it just simulates a successful
-// send so the rest of the flow (redirect, thank-you page) can be built
-// and tested end to end.
 function sendReservation(formData) {
   return new Promise((resolve) => {
     console.log('Reservation submitted (not yet wired to a real backend):', formData);
