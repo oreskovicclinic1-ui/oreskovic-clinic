@@ -1,7 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 import './UspjesnaRezervacijaPage.css';
 
 export default function UspjesnaRezervacijaPage() {
+  const location = useLocation();
+
+  if (!location.state?.fromReservation) {
+    return <Navigate to="/rezervacija" replace />;
+  }
+
   return (
     <section className="success-page section">
       <div className="container success-inner">

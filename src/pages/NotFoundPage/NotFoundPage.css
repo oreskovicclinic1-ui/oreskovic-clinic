@@ -1,0 +1,114 @@
+.notfound-page {
+  background-color: var(--color-ivory);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.notfound-inner {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  animation: notfound-fade-in 0.9s ease both;
+}
+
+@keyframes notfound-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notfound-inner {
+    animation: none;
+  }
+}
+
+.notfound-number {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 1;
+  color: var(--color-champagne);
+  margin-bottom: 8px;
+}
+
+.notfound-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 14px;
+}
+
+.notfound-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-charcoal);
+  margin-bottom: 16px;
+}
+
+.notfound-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4A4644;
+  margin-bottom: 32px;
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.notfound-button {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.notfound-button-primary {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}
+
+.notfound-button-primary:hover {
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.notfound-button-secondary {
+  background-color: transparent;
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-charcoal);
+}
+
+.notfound-button-secondary:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}
+
+.notfound-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  text-decoration: underline;
+}

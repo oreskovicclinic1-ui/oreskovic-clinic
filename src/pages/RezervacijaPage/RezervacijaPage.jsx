@@ -42,7 +42,7 @@ export default function RezervacijaPage() {
     setIsSubmitting(true);
     try {
       await sendReservation(form);
-      navigate('/uspesna-rezervacija');
+      navigate('/uspesna-rezervacija', { state: { fromReservation: true } });
     } catch {
       setError('Došlo je do greške. Molimo pokušajte ponovo, ili nas nazovite direktno.');
       setIsSubmitting(false);
