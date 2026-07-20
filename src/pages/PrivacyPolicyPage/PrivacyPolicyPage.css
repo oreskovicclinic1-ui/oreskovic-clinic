@@ -22,6 +22,7 @@
   font-size: 36px;
   color: var(--color-charcoal);
   margin-bottom: 8px;
+  line-height: 1.1;
 }
 
 .policy-page-updated {

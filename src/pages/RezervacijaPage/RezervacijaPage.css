@@ -1,0 +1,319 @@
+.rezervacija-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(182, 150, 100, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 85% 85%, rgba(217, 169, 160, 0.16) 0%, transparent 55%),
+    var(--color-charcoal);
+  margin-top: -110px;
+  padding-top: calc(var(--section-padding-y) + 110px);
+  padding-bottom: 80px;
+}
+
+.rezervacija-hero-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+}
+
+.rezervacija-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.55;
+  animation: rezervacija-drift 18s ease-in-out infinite;
+}
+
+.rezervacija-blob-1 {
+  width: 380px;
+  height: 380px;
+  top: -100px;
+  left: 5%;
+  background: var(--color-gold);
+}
+
+.rezervacija-blob-2 {
+  width: 340px;
+  height: 340px;
+  bottom: -100px;
+  right: 5%;
+  background: var(--color-champagne);
+  animation-duration: 22s;
+  animation-delay: -8s;
+}
+
+@keyframes rezervacija-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rezervacija-blob {
+    animation: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .rezervacija-hero-blobs {
+    display: block;
+  }
+}
+
+/* ---- LAYOUT ----------------------------------------------------------
+   Mobile-first, deliberately NOT grid/flex here. Plain block elements
+   stacked vertically are the one CSS layout mode with zero risk of the
+   "min-width: auto" grid/flex track-expansion bug we kept chasing. The
+   two-column side-by-side layout only turns on at the desktop
+   breakpoint, once there's no risk of a narrow viewport being pushed
+   wider than the screen. */
+
+.rezervacija-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.rezervacija-content {
+  color: var(--color-ivory);
+  margin-bottom: 40px;
+}
+
+.rezervacija-form-card {
+  background-color: rgba(248, 245, 240, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 28px 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 900px) {
+  .rezervacija-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .rezervacija-content {
+    margin-bottom: 0;
+  }
+
+  .rezervacija-form-card {
+    padding: 40px;
+  }
+}
+
+/* Left column */
+
+.rezervacija-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.rezervacija-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--color-ivory);
+  margin-bottom: 18px;
+}
+
+.rezervacija-intro {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(248, 245, 240, 0.75);
+  margin-bottom: 28px;
+}
+
+.rezervacija-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.rezervacija-highlight-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background-color: rgba(248, 245, 240, 0.92);
+  border-radius: 999px;
+  padding: 8px 14px 8px 8px;
+}
+
+.rezervacija-highlight-check {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rezervacija-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ivory);
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  .rezervacija-title {
+    font-size: 48px;
+  }
+
+  .rezervacija-intro {
+    max-width: 440px;
+  }
+}
+
+/* ---- FORM -------------------------------------------------------------
+   Every control gets an explicit box-sizing: border-box. Relying on the
+   global reset wasn't enough here in practice - some mobile browsers
+   apply their own UA stylesheet box-sizing to form controls specifically,
+   which can win out. Being explicit here removes any doubt. */
+
+.rezervacija-form {
+  display: block;
+}
+
+.rezervacija-field {
+  margin-bottom: 18px;
+}
+
+.rezervacija-field label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 8px;
+}
+
+.rezervacija-field input,
+.rezervacija-field select,
+.rezervacija-field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  border: 1px solid rgba(34, 31, 29, 0.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.rezervacija-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%23221F1D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+  padding-right: 40px;
+}
+
+.rezervacija-field input::placeholder,
+.rezervacija-field textarea::placeholder {
+  color: rgba(34, 31, 29, 0.4);
+}
+
+.rezervacija-field input:focus,
+.rezervacija-field select:focus,
+.rezervacija-field textarea:focus {
+  border-color: var(--color-gold);
+}
+
+.rezervacija-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.rezervacija-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.rezervacija-toggle-option {
+  flex: 1;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  border: 1px solid rgba(34, 31, 29, 0.14);
+  border-radius: 12px;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.rezervacija-toggle-option.is-active {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  border-color: var(--color-charcoal);
+}
+
+.rezervacija-error {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: #B3441E;
+  background-color: rgba(179, 68, 30, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+}
+
+.rezervacija-submit {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ivory);
+  background-color: var(--color-charcoal);
+  border-radius: 999px;
+  padding: 15px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.rezervacija-submit:hover:not(:disabled) {
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.rezervacija-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

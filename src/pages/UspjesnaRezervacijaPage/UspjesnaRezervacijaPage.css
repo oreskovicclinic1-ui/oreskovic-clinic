@@ -1,0 +1,100 @@
+.success-page {
+  background-color: var(--color-ivory);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-inner {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.success-kicker {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold);
+  margin-bottom: 14px;
+}
+
+.success-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-charcoal);
+  margin-bottom: 16px;
+}
+
+.success-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4A4644;
+  margin-bottom: 20px;
+}
+
+.success-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  text-decoration: underline;
+  margin-bottom: 36px;
+}
+
+.success-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.success-button {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.success-button-primary {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}
+
+.success-button-primary:hover {
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.success-button-secondary {
+  background-color: transparent;
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-charcoal);
+}
+
+.success-button-secondary:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}

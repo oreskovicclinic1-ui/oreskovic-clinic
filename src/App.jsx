@@ -14,7 +14,8 @@ import ScrollToTop from './utils/ScrollToTop';
 import ResultsPage from './pages/ResultsPage/ResultsPage';
 import CjenikPage from './pages/CjenikPage/CjenikPage';
 import TreatmentPage from './pages/TreatmentPage/TreatmentPage';
-
+import UspjesnaRezervacijaPage from './pages/UspjesnaRezervacijaPage/UspjesnaRezervacijaPage';
+import RezervacijaPage from './pages/RezervacijaPage/RezervacijaPage';
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/rezultati" element={<ResultsPage />} />
           <Route path="/cjenik" element={<CjenikPage />} />
           <Route path="/tretmani/:slug" element={<TreatmentPage />} />
+          <Route path="/rezervacija" element={<RezervacijaPage />} />
+          <Route path="/uspesna-rezervacija" element={<UspjesnaRezervacijaPage />} />
 
       </Routes>
 

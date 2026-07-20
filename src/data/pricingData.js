@@ -17,9 +17,8 @@ export const categories = [
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '65€' },
-      { label: 'Paket 10+2 GRATIS (Gubitak do 10cm)', price: '650€' },
-      { label: 'Paket 14+6 GRATIS (Gubitak do 20cm)', price: '950€' },
-      { label: 'Paket 30+10 GRATIS (Gubitak do 30cm)', price: '1950€' },
+      { label: 'Paket 10+2 GRATIS', price: '650€' },
+      { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
   {
@@ -32,65 +31,19 @@ export const categories = [
     tiers: [
       { label: '1 tretman', price: '65€' },
       { label: 'Paket 10+2 GRATIS', price: '650€' },
-      { label: 'Paket 14+6 GRATIS', price: '950€' },
-      { label: 'Paket 30+10 GRATIS', price: '1950€' },
+      { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
   {
     id: 'dlacice',
     group: 'estetski',
     label: 'Trajno uklanjanje dlačica',
-    badge: '50% OFF',
+    badge: '75% OFF',
     description:
-      'Svaki tretman moguće je odraditi pojedinačno ili unutar paketa. Najbolji rezultati vidljivi su nakon 6 do 8 tretmana — uz kupnju paketa rezultate garantiramo povratom novca. Dodatnih 20% popusta na kupnju paketa za dodatnu regiju.',
-    kind: 'grouped',
-    groups: [
-      {
-        groupLabel: 'Tijelo',
-        items: [
-          { label: 'Bikini', price: '80€', oldPrice: '160€' },
-          { label: 'Prepone', price: '60€', oldPrice: '120€' },
-          { label: 'Pazusi', price: '60€', oldPrice: '120€' },
-          { label: 'Potkoljenice', price: '125€', oldPrice: '250€' },
-          { label: 'Natkoljenice', price: '125€', oldPrice: '250€' },
-          { label: 'Podlaktice', price: '80€', oldPrice: '160€' },
-          { label: 'Grudi', price: '100€', oldPrice: '200€' },
-          { label: 'Prsa (muškarci)', price: '125€', oldPrice: '250€' },
-          { label: 'Trbuh', price: '125€', oldPrice: '250€' },
-          { label: 'Stražnjica', price: '100€', oldPrice: '200€' },
-          { label: 'Leđa (cijela)', price: '160€', oldPrice: '320€' },
-          { label: 'Leđa (donja)', price: '110€', oldPrice: '220€' },
-          { label: 'Leđa (gornja)', price: '110€', oldPrice: '220€' },
-          { label: 'Trtica', price: '30€', oldPrice: '60€' },
-          { label: 'Crta ispod pupka', price: '50€', oldPrice: '100€' },
-          { label: 'Ramena', price: '110€', oldPrice: '220€' },
-          { label: 'Vrat', price: '75€', oldPrice: '150€' },
-          { label: 'Prsti', price: '25€', oldPrice: '50€' },
-        ],
-      },
-      {
-        groupLabel: 'Lice',
-        items: [
-          { label: 'Brada', price: '50€', oldPrice: '100€' },
-          { label: 'Obrazi', price: '50€', oldPrice: '100€' },
-          { label: 'Nausnice', price: '40€', oldPrice: '80€' },
-          { label: 'Zalisci', price: '25€', oldPrice: '50€' },
-          { label: 'Uši', price: '25€', oldPrice: '50€' },
-          { label: 'Prostor između obrva', price: '25€', oldPrice: '50€' },
-        ],
-      },
-      {
-        groupLabel: 'Paketi za više regija',
-        items: [
-          { label: 'Cijelo lice', price: '100€', oldPrice: '200€' },
-          { label: 'Cijele ruke', price: '125€', oldPrice: '250€' },
-          { label: 'Cijele noge', price: '200€', oldPrice: '400€' },
-          { label: 'Cijelo tijelo (ruke, noge, bikini, pazusi)', price: '400€', oldPrice: '800€' },
-          { label: 'Bikini + pazusi', price: '100€', oldPrice: '200€' },
-          { label: 'Ruke + pazusi', price: '150€', oldPrice: '300€' },
-          { label: 'Noge + prepone + bikini', price: '250€', oldPrice: '500€' },
-        ],
-      },
+      'Paket za cijelo tijelo, neograničen broj tretmana dok dlačice u potpunosti ne budu uklonjene.',
+    kind: 'simple',
+    tiers: [
+      { label: 'Paket cijelo tijelo (neograničen broj tretmana)', price: '1000€', oldPrice: '4000€' },
     ],
   },
   {
@@ -103,7 +56,7 @@ export const categories = [
     tiers: [
       { label: '1 tretman', price: '65€' },
       { label: 'Paket 10+2 GRATIS', price: '650€' },
-      { label: 'Paket 14+6 GRATIS', price: '950€' },
+      { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
   {
@@ -116,6 +69,7 @@ export const categories = [
     tiers: [
       { label: '1 tretman', price: '65€' },
       { label: 'Paket 10+2 GRATIS', price: '650€' },
+      { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
   {
@@ -128,8 +82,7 @@ export const categories = [
     tiers: [
       { label: '1 tretman', price: '65€' },
       { label: 'Paket 10+2 GRATIS', price: '650€' },
-      { label: '1 tretman PREMIUM', price: '120€' },
-      { label: 'Paket 6+2 GRATIS PREMIUM tretmana', price: '720€' },
+      { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
   {
@@ -163,24 +116,20 @@ export const categories = [
     id: 'usne-fileri',
     group: 'estetski',
     label: 'Povećavanje usana dermalnim filerima',
-    description: 'Oblikovanje i hidratacija usana dermalnim filerima na bazi hijaluronske kiseline. (generički)',
+    description: 'Oblikovanje i hidratacija usana dermalnim filerima na bazi hijaluronske kiseline.',
     kind: 'simple',
-    tiers: [
-      { label: '1 ml filera', price: '250€' },
-      { label: '2 ml filera (paket)', price: '450€' },
-    ],
+    tiers: [{ label: 'Tretman', price: '280€' }],
   },
   {
     id: 'jacanje-misica',
     group: 'estetski',
     label: 'Tretmani jačanja mišića',
     description:
-      'Elektromagnetna stimulacija koja potiče kontrakcije mišića i ubrzava izgradnju mišićne mase. (generički)',
+      'Elektromagnetna stimulacija koja potiče kontrakcije mišića i ubrzava izgradnju mišićne mase.',
     kind: 'simple',
     tiers: [
-      { label: '1 tretman', price: '75€' },
-      { label: 'Paket 6 tretmana', price: '400€' },
-      { label: 'Paket 10 tretmana', price: '650€' },
+      { label: '1 tretman', price: '40€' },
+      { label: 'Paket 10+2 GRATIS', price: '400€' },
     ],
   },
   {
@@ -188,11 +137,11 @@ export const categories = [
     group: 'estetski',
     label: 'Tretmani podizanja i učvršćivanja stražnjice',
     description:
-      'Kombinacija elektromagnetne stimulacije i zatezanja kože za podizanje i oblikovanje stražnjice. (generički)',
+      'Kombinacija elektromagnetne stimulacije i zatezanja kože za podizanje i oblikovanje stražnjice.',
     kind: 'simple',
     tiers: [
-      { label: '1 tretman', price: '75€' },
-      { label: 'Paket 10+2 GRATIS', price: '750€' },
+      { label: '1 tretman', price: '40€' },
+      { label: 'Paket 10+2 GRATIS', price: '400€' },
     ],
   },
   {
@@ -202,10 +151,7 @@ export const categories = [
     description:
       'U našim ordinacijama koristimo samo najkvalitetniju aparaturu i najučinkovitije tehnike kako bismo riješili vaše bolove.',
     kind: 'simple',
-    tiers: [
-      { label: '1 tretman', price: '40€' },
-      { label: 'Paket 10+2 GRATIS', price: '400€' },
-    ],
+    tiers: [{ label: 'Paket 6 terapija', price: '300€', oldPrice: '420€' }],
   },
   {
     id: 'vitaminske-infuzije',
