@@ -47,22 +47,22 @@ export default function TrustBar() {
 
         <div className="trust-stats reveal reveal-2">
           <div className="trust-stat">
-            <span className="trust-stat-number">15+</span>
+            <span className="trust-stat-number">4+</span>
             <span className="trust-stat-label">Godina iskustva</span>
           </div>
 
           <div className="trust-stat">
-            <span className="trust-stat-number">10.000+</span>
+            <span className="trust-stat-number">1000</span>
             <span className="trust-stat-label">Zadovoljnih pacijenata</span>
           </div>
 
           <div className="trust-stat">
-            <span className="trust-stat-number">50+</span>
+            <span className="trust-stat-number">15+</span>
             <span className="trust-stat-label">Različitih tretmana</span>
           </div>
 
           <div className="trust-stat">
-            <span className="trust-stat-number">3</span>
+            <span className="trust-stat-number">2</span>
             <span className="trust-stat-label">Lokacije klinike</span>
           </div>
 
