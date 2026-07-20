@@ -2,6 +2,35 @@ import './Hero.css';
 
 import hero1 from '../../assets/hero1.jpg';
 
+// Custom smooth scroll with a slower, controllable duration - CSS
+// scroll-behavior:smooth doesn't let us control speed, browsers just
+// pick something fast on their own.
+function scrollToSection(e, targetId) {
+  e.preventDefault();
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const headerOffset = 100;
+  const startY = window.scrollY;
+  const targetY = target.getBoundingClientRect().top + startY - headerOffset;
+  const distance = targetY - startY;
+  const duration = 1200; // ms - increase for slower, decrease for faster
+  let startTime = null;
+
+  function easeInOutQuad(t) {
+    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  }
+
+  function step(timestamp) {
+    if (startTime === null) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, startY + distance * easeInOutQuad(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
 
 export default function Hero() {
   return (
@@ -36,7 +65,11 @@ export default function Hero() {
               Rezervirajte svoj termin
               <span className="hero-button-arrow">→</span>
             </a>
-            <a href="/tretmani" className="hero-button hero-button-secondary">
+            <a
+              href="#tretmani"
+              className="hero-button hero-button-secondary"
+              onClick={(e) => scrollToSection(e, 'tretmani')}
+            >
               Istražite tretmane
             </a>
           </div>

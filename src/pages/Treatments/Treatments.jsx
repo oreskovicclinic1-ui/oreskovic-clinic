@@ -127,7 +127,7 @@ export default function Treatments() {
   }
 
   return (
-    <section className="treatments section" ref={sectionRef}>
+    <section className="treatments section" ref={sectionRef} id="tretmani">
       <div className="container treatments-intro reveal">
         <p className="treatments-kicker">TRETMANI</p>
 
