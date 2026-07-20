@@ -2,10 +2,62 @@ import './Footer.css';
 
 import logo from '../../assets/logo-white.png';
 import { openCookieSettings } from '../../utils/privacyPreferences';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+// Custom smooth scroll with a slower, controllable duration - CSS
+// scroll-behavior:smooth doesn't let us control speed, browsers just
+// pick something fast on their own.
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+}
+
+function performScroll(id) {
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  const headerOffset = 100;
+  const startY = window.scrollY;
+  const targetY = target.getBoundingClientRect().top + startY - headerOffset;
+  const distance = targetY - startY;
+  const duration = 1200; // ms
+  let startTime = null;
+
+  function step(timestamp) {
+    if (startTime === null) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, startY + distance * easeInOutQuad(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
+// After navigating to a different page, the target section doesn't
+// exist in the DOM yet until the new page finishes rendering - this
+// polls briefly until it appears, then scrolls.
+function scrollToIdWithRetry(id, attemptsLeft = 20) {
+  const target = document.getElementById(id);
+  if (target) {
+    performScroll(id);
+  } else if (attemptsLeft > 0) {
+    setTimeout(() => scrollToIdWithRetry(id, attemptsLeft - 1), 50);
+  }
+}
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const navigate = useNavigate();
+
+  function handleTretmaniClick(e) {
+    e.preventDefault();
+    if (window.location.pathname === '/') {
+      performScroll('tretmani');
+    } else {
+      navigate('/');
+      scrollToIdWithRetry('tretmani');
+    }
+  }
 
   return (
     <footer className="footer">
@@ -17,12 +69,12 @@ export default function Footer() {
           </p>
 
           <div className="footer-social">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/p/Ore%C5%A1kovi%C4%87-Clinic-100076336251572/" target="_blank" rel="noreferrer" aria-label="Facebook">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z" />
               </svg>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/oreskovic_clinic/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <rect x="3" y="3" width="18" height="18" rx="5" />
                 <circle cx="12" cy="12" r="4" />
@@ -53,7 +105,11 @@ export default function Footer() {
           <h4 className="footer-heading">Navigacija</h4>
           <ul className="footer-list">
             <li><a href="/o-klinici">O klinici</a></li>
-            <li><a href="/tretmani">Tretmani</a></li>
+            <li>
+              <a href="/#tretmani" onClick={handleTretmaniClick}>
+                Tretmani
+              </a>
+            </li>
             <li><a href="/cjenik">Cjenik</a></li>
             <li><a href="/rezultati">Rezultati</a></li>
             <li><a href="/rezervacija">Rezervacija termina</a></li>
@@ -88,7 +144,7 @@ export default function Footer() {
           </button>
         </div>
 
-        <p className="footer-credit">Izrada sajta: SP</p>
+        <a href='https://www.tyne.rs/' className="footer-credit">Izrada sajta: Tyne Agency</a>
       </div>
     </footer>
   );

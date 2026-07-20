@@ -147,6 +147,7 @@
   font-family: var(--font-body);
   font-size: 12px;
   color: rgba(248, 245, 240, 0.45);
+  text-decoration: none;
 }
 
 .footer-legal {
