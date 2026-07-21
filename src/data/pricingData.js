@@ -149,9 +149,9 @@ export const categories = [
     group: 'zdravstveni',
     label: 'Terapije ozljeda',
     description:
-      'U našim ordinacijama koristimo samo najkvalitetniju aparaturu i najučinkovitije tehnike kako bismo riješili vaše bolove.',
+      'U našim ordinacijama koristimo samo najkvalitetniju aparaturu i najučinkovitije tehnike kako bismo riješili vaše bolove. Paket uključuje 6 terapija na Indiba Edna Pro Max uređaju i 6 terapija na K-Laser Cube 4 uređaju.',
     kind: 'simple',
-    tiers: [{ label: 'Paket 6 terapija', price: '300€', oldPrice: '420€' }],
+    tiers: [{ label: 'Paket 6 terapija Indiba + 6 terapija K-Laser', price: '300€', oldPrice: '420€' }],
   },
   {
     id: 'vitaminske-infuzije',
@@ -166,19 +166,19 @@ export const categories = [
       // { label: 'Paket 12 infuzija', price: '1320€', oldPrice: '1620€' },
     ],
   },
-  {
-    id: 'test-alergije',
-    group: 'zdravstveni',
-    label: 'Test na alergije + status vitamina i minerala',
-    description:
-      'Brzo i jednostavno saznajte na što vaše tijelo reagira — simptomi poput kihanja, svrbeža očiju, začepljenog nosa, umora ili kožnih reakcija.',
-    kind: 'simple',
-    tiers: [{ label: '1 test', price: '240€', oldPrice: '360€' }],
-  },
+  // {
+  //   id: 'test-alergije',
+  //   group: 'zdravstveni',
+  //   label: 'Test na alergije + status vitamina i minerala',
+  //   description:
+  //     'Brzo i jednostavno saznajte na što vaše tijelo reagira — simptomi poput kihanja, svrbeža očiju, začepljenog nosa, umora ili kožnih reakcija.',
+  //   kind: 'simple',
+  //   tiers: [{ label: '1 test', price: '240€', oldPrice: '360€' }],
+  // },
   {
     id: 'test-intolerancija',
     group: 'zdravstveni',
-    label: 'Test intolerancije na hranu + status vitamina i minerala',
+    label: 'Test intolerancije na hranu + status vitamina i minerala + test na alergije',
     description: 'Brzo i jednostavno saznajte koju biste hranu trebali izbaciti iz prehrane.',
     kind: 'simple',
     tiers: [{ label: '1 test', price: '240€', oldPrice: '720€' }],

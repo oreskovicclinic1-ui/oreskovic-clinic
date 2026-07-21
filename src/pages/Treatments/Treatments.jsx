@@ -16,7 +16,7 @@ const treatments = [
   { name: 'Terapija ozljeda', category: 'Zdravstveni tretman', slug: 'terapija-ozljeda' },
   { name: 'Vitaminske infuzije', category: 'Zdravstveni tretman', slug: 'vitaminske-infuzije' },
   { name: 'Test intolerancije na hranu', category: 'Zdravstveni tretman', slug: 'test-intolerancija' },
-  { name: 'Test na alergije', category: 'Zdravstveni tretman', slug: 'test-alergije' },
+  // { name: 'Test na alergije', category: 'Zdravstveni tretman', slug: 'test-alergije' },
   { name: 'Opća medicina i dijagnostika', category: 'Zdravstveni tretman', slug: 'opca-medicina' },
   { name: 'Medicinske intervencije i terapije', category: 'Zdravstveni tretman', slug: 'medicinske-intervencije' },
   { name: 'Fizikalna i regenerativna terapija', category: 'Zdravstveni tretman', slug: 'fizikalna-terapija' },

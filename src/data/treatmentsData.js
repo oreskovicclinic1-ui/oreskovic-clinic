@@ -31,7 +31,7 @@ const genericFaq = [
 ];
 
 export const treatments = {
-  'test-intolerancija': {
+'test-intolerancija': {
     pricingId: 'test-intolerancija',
     slug: 'test-intolerancija',
     name: 'Test intolerancije na hranu',
@@ -41,12 +41,13 @@ export const treatments = {
     shortBenefit:
       'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno i bez igle. Test traje samo 20 minuta, a rezultati su gotovi odmah. Uz to dobivate i uvid u status vitamina i minerala u organizmu.',
     description:
-      'Test intolerancije na hranu brzo i jednostavno otkriva koje namirnice biste trebali izbaciti iz prehrane kako biste smanjili umor, probavne smetnje, nadutost i manjak energije. Tretman izvodimo Bicom Body Check 2 aparatom, koji uz intolerancije pokazuje i koje vitamine i minerale vašem tijelu nedostaje. Postupak je potpuno neinvazivan — bez igala — a rezultati su gotovi već za 20 minuta.',
+      'Test intolerancije na hranu brzo i jednostavno otkriva koje namirnice biste trebali izbaciti iz prehrane kako biste smanjili umor, probavne smetnje, nadutost i manjak energije. Uz test intolerancije, u istom pregledu obavlja se i test na alergije, kao i provjera statusa vitamina i minerala. Tretman izvodimo Bicom Body Check 2 aparatom, koji uz intolerancije i alergije pokazuje i koje vitamine i minerale vašem tijelu nedostaje. Postupak je potpuno neinvazivan — bez igala — a rezultati su gotovi već za 20 minuta.',
     highlights: [
       'Rezultati odmah nakon testiranja',
       'Test traje oko 20 minuta',
       'Potpuno bezbolan i neinvazivan postupak',
       'Analiza intolerancije na veliki broj namirnica',
+      'Uključuje i test na alergije te status vitamina i minerala',
       'Dostupno na više lokacija u Hrvatskoj',
     ],
     process: [
@@ -74,35 +75,35 @@ export const treatments = {
     faq: genericFaq,
   },
 
-  'test-alergije': {
-    pricingId: 'test-alergije',
-    slug: 'test-alergije',
-    name: 'Test na alergije',
-    category: 'Zdravstvene usluge',
-    heroImage: '/treatments/test-alergije.webp',
-    pricingImage: '/treatments/test-alergije-pricing.webp',
-    shortBenefit:
-      'Otkrijte na što vaše tijelo reagira — bez vađenja krvi, potpuno bezbolno. Testiranje obuhvaća preko 300 potencijalnih alergena iz okoline i prehrane. Rezultati su dostupni odmah, uz jasne preporuke za dalje korake.',
-    description:
-      'Test na alergije pomaže otkriti na koje tvari iz okoline ili prehrane vaše tijelo može reagirati, uzrokujući simptome poput kihanja, svrbeža očiju, začepljenog nosa, umora ili kožnih reakcija. Ako godinama imate simptome čiji uzrok ne znate, ovaj test daje konkretan uvid i jasne smjernice — bez vađenja krvi, u samo 20 minuta.',
-    highlights: [
-      'Testiranje obuhvaća više od 300 potencijalnih alergena',
-      'Uključuje alergene iz okoline i prehrane',
-      'Testiranje je potpuno bezbolno (bez vađenja krvi)',
-      'Traje oko 20 minuta, rezultati su dostupni odmah',
-      'Dobivate popis alergena i preporuke za vitamine i minerale',
-    ],
-    process: [
-      { title: 'Priprema', text: 'Na tijelo se postavljaju elektrode koje detektiraju reakcije organizma.' },
-      { title: 'Skeniranje', text: 'Uređaj testira reakciju vašeg tijela na preko 300 potencijalnih alergena.' },
-      { title: 'Rezultati', text: 'Dobivate jasan popis alergena, kao i preporuke za vitamine i minerale.' },
-    ],
-    forWhom:
-      'Test na alergije preporučujemo svima koji godinama imaju nespecifične simptome (kihanje, umor, kožne reakcije) bez jasnog uzroka, kao i onima koji žele preventivno provjeriti svoju osjetljivost na alergene iz okoline i prehrane.',
-    faq: genericFaq,
-  },
+  // 'test-alergije': {
+  //   pricingId: 'test-alergije',
+  //   slug: 'test-alergije',
+  //   name: 'Test na alergije',
+  //   category: 'Zdravstvene usluge',
+  //   heroImage: '/treatments/test-alergije.webp',
+  //   pricingImage: '/treatments/test-alergije-pricing.webp',
+  //   shortBenefit:
+  //     'Otkrijte na što vaše tijelo reagira — bez vađenja krvi, potpuno bezbolno. Testiranje obuhvaća preko 300 potencijalnih alergena iz okoline i prehrane. Rezultati su dostupni odmah, uz jasne preporuke za dalje korake.',
+  //   description:
+  //     'Test na alergije pomaže otkriti na koje tvari iz okoline ili prehrane vaše tijelo može reagirati, uzrokujući simptome poput kihanja, svrbeža očiju, začepljenog nosa, umora ili kožnih reakcija. Ako godinama imate simptome čiji uzrok ne znate, ovaj test daje konkretan uvid i jasne smjernice — bez vađenja krvi, u samo 20 minuta.',
+  //   highlights: [
+  //     'Testiranje obuhvaća više od 300 potencijalnih alergena',
+  //     'Uključuje alergene iz okoline i prehrane',
+  //     'Testiranje je potpuno bezbolno (bez vađenja krvi)',
+  //     'Traje oko 20 minuta, rezultati su dostupni odmah',
+  //     'Dobivate popis alergena i preporuke za vitamine i minerale',
+  //   ],
+  //   process: [
+  //     { title: 'Priprema', text: 'Na tijelo se postavljaju elektrode koje detektiraju reakcije organizma.' },
+  //     { title: 'Skeniranje', text: 'Uređaj testira reakciju vašeg tijela na preko 300 potencijalnih alergena.' },
+  //     { title: 'Rezultati', text: 'Dobivate jasan popis alergena, kao i preporuke za vitamine i minerale.' },
+  //   ],
+  //   forWhom:
+  //     'Test na alergije preporučujemo svima koji godinama imaju nespecifične simptome (kihanje, umor, kožne reakcije) bez jasnog uzroka, kao i onima koji žele preventivno provjeriti svoju osjetljivost na alergene iz okoline i prehrane.',
+  //   faq: genericFaq,
+  // },
 
-  'terapija-ozljeda': {
+'terapija-ozljeda': {
     pricingId: 'terapija-ozljeda',
     slug: 'terapija-ozljeda',
     name: 'Terapija ozljeda',
@@ -118,6 +119,7 @@ export const treatments = {
       'Neinvazivan i bezbolan tretman',
       'Ubrzava proces oporavka',
       'Smanjuje bol i upalu',
+      'Paket uključuje 6 terapija Indiba + 6 terapija K-Laser',
       'Pogodno za sportaše i rekreativce',
       'Dostupno u više lokacija',
     ],

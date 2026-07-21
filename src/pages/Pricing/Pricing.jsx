@@ -6,7 +6,7 @@ import pricing2mobile from '../../assets/pricing2mobile.webp';
 import { getCategoryById } from '../../data/pricingData';
 import './Pricing.css';
 
-const healthIds = ['test-intolerancija', 'test-alergije', 'terapija-ozljeda', 'vitaminske-infuzije'];
+const healthIds = ['test-intolerancija', 'terapija-ozljeda', 'vitaminske-infuzije'];
 const aestheticIds = ['podbradak', 'mrsavljenje'];
 
 function buildPanel({ title, imageMobile, imageDesktop, ids }) {
