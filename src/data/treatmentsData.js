@@ -506,32 +506,32 @@ export const treatments = {
     faq: genericFaq,
   },
 
-  'opca-medicina': {
-    pricingId: 'opca-medicina',
-    slug: 'opca-medicina',
-    name: 'Opća medicina i dijagnostika (generic)',
-    category: 'Zdravstvene usluge',
-    heroImage: '/treatments/opca-medicina.webp',
-    pricingImage: '/treatments/opca-medicina-pricing.webp',
-    shortBenefit:
-      'Pregledi, dijagnostika i osnovna zdravstvena skrb na jednom mjestu. Od redovnih kontrola do hitnih pregleda, brzo i bez čekanja. Naš tim opće medicine uvijek vam je dostupan.',
-    description:
-      'Nudimo kompletan raspon usluga opće medicine — od prvih i kontrolnih pregleda, preko dijagnostike (EKG, mjerenje tlaka, uzorkovanje krvi), do izdavanja medicinske dokumentacije i recepata. Dostupni smo i za pregled u kući.',
-    highlights: [
-      'Prvi i kontrolni pregledi',
-      'Dijagnostika i laboratorijske pretrage',
-      'Mogućnost pregleda u kući',
-      'Brzo izdavanje dokumentacije i recepata',
-    ],
-    process: [
-      { title: 'Zakazivanje', text: 'Dogovaramo termin prema vašim potrebama i hitnosti.' },
-      { title: 'Pregled', text: 'Liječnik opće medicine obavlja pregled i po potrebi dijagnostiku.' },
-      { title: 'Nalaz i preporuke', text: 'Dobivate nalaz, preporuke i, po potrebi, terapiju ili recept.' },
-    ],
-    forWhom:
-      'Namijenjeno svima kojima je potreban pregled liječnika opće medicine — redovna kontrola, hitno stanje, ili dijagnostička pretraga.',
-    faq: genericFaq,
-  },
+  // 'opca-medicina': {
+  //   pricingId: 'opca-medicina',
+  //   slug: 'opca-medicina',
+  //   name: 'Opća medicina i dijagnostika (generic)',
+  //   category: 'Zdravstvene usluge',
+  //   heroImage: '/treatments/opca-medicina.webp',
+  //   pricingImage: '/treatments/opca-medicina-pricing.webp',
+  //   shortBenefit:
+  //     'Pregledi, dijagnostika i osnovna zdravstvena skrb na jednom mjestu. Od redovnih kontrola do hitnih pregleda, brzo i bez čekanja. Naš tim opće medicine uvijek vam je dostupan.',
+  //   description:
+  //     'Nudimo kompletan raspon usluga opće medicine — od prvih i kontrolnih pregleda, preko dijagnostike (EKG, mjerenje tlaka, uzorkovanje krvi), do izdavanja medicinske dokumentacije i recepata. Dostupni smo i za pregled u kući.',
+  //   highlights: [
+  //     'Prvi i kontrolni pregledi',
+  //     'Dijagnostika i laboratorijske pretrage',
+  //     'Mogućnost pregleda u kući',
+  //     'Brzo izdavanje dokumentacije i recepata',
+  //   ],
+  //   process: [
+  //     { title: 'Zakazivanje', text: 'Dogovaramo termin prema vašim potrebama i hitnosti.' },
+  //     { title: 'Pregled', text: 'Liječnik opće medicine obavlja pregled i po potrebi dijagnostiku.' },
+  //     { title: 'Nalaz i preporuke', text: 'Dobivate nalaz, preporuke i, po potrebi, terapiju ili recept.' },
+  //   ],
+  //   forWhom:
+  //     'Namijenjeno svima kojima je potreban pregled liječnika opće medicine — redovna kontrola, hitno stanje, ili dijagnostička pretraga.',
+  //   faq: genericFaq,
+  // },
 
   'medicinske-intervencije': {
     pricingId: 'medicinske-intervencije',
