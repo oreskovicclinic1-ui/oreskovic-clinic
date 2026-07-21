@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import FinalCta from '../FinalCta/Finalcta';
+import FinalCta from '../FinalCta/FinalCta';
 import './OKliniciPage.css';
 
 const devices = [
