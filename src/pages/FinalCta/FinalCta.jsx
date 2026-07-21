@@ -34,7 +34,7 @@ export default function FinalCta() {
         </h2>
 
         <p className="final-cta-subtitle">
-          Zakažite besplatnu konsultaciju i saznajte koji je tretman pravi izbor za vas.
+          Zakažite besplatnu konzultaciju i saznajte koji je tretman pravi izbor za vas.
         </p>
 
         <a href="/rezervacija" className="final-cta-button">

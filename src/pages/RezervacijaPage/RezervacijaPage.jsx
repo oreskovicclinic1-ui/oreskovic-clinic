@@ -76,7 +76,7 @@ export default function RezervacijaPage() {
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
-              Besplatna konsultacija
+              Besplatna konzultacija
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
