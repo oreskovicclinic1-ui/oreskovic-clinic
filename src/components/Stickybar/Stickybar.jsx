@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './StickyBar.css';
+import './Stickybar.css';
 
 export default function StickyBar() {
   const [isVisible, setIsVisible] = useState(false);

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import FinalCta from '../FinalCta/Finalcta';
 import './ResultsPage.css';
 import backgroundImage from '../../assets/results-cover.webp';
+import FinalCta from '../FinalCta/FinalCta';
 
 // To add a new category later: just add one line here, and drop images
 // in /public/results/{id}/1.jpg, 2.jpg, etc. up to {count}.

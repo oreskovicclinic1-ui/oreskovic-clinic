@@ -8,7 +8,7 @@ import Process from "../Process/Process";
 import Results from "../Results/Results";
 import Offer from "../Offer/Offer";
 import Testimonials from "../Testimonials/Testimonials";
-import FinalCta from "../FinalCta/Finalcta";
+import FinalCta from "../FinalCta/FinalCta";
 
 
 function Home() {

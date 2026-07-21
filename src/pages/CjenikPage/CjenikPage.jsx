@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import FinalCta from '../FinalCta/Finalcta';
+import FinalCta from '../FinalCta/FinalCta';
 import './CjenikPage.css';
 import backgroundImage from '../../assets/cjenik-cover.webp';
 import { categories, getStartingPrice, groupLabels } from '../../data/pricingData';

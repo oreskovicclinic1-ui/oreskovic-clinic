@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import FinalCta from '../FinalCta/Finalcta';
+import FinalCta from '../FinalCta/FinalCta';
 import { getTreatmentBySlug } from '../../data/treatmentsData';
 import { getCategoryById, getStartingPrice } from '../../data/pricingData';
 import './TreatmentPage.css';
