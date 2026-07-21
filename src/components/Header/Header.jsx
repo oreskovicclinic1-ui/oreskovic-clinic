@@ -17,7 +17,7 @@ const t = {
   usneFileri: 'Povećavanje usana filerima',
   podocnjaci: 'Uklanjanje podočnjaka',
   podbradak: 'Uklanjanje podbratka',
-  estetikaKozmetologija: 'Estetika i kozmetologija',
+  // estetikaKozmetologija: 'Estetika i kozmetologija',
   celulit: 'Anti celulitni tretmani',
   mrsavljenje: 'Tretmani mršavljenja',
   dlacice: 'Trajno uklanjanje dlačica',
@@ -28,7 +28,7 @@ const t = {
   testIntolerancije: 'Test intolerancije na hranu',
   // testAlergije: 'Test na alergije',
   // opcaMedicina: 'Opća medicina i dijagnostika',
-  medicinskeIntervencije: 'Medicinske intervencije i terapije',
+  // medicinskeIntervencije: 'Medicinske intervencije i terapije',
   fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
   nutricionizam: 'Nutricionizam i savjetovanje',
 };
@@ -79,7 +79,7 @@ export default function Header() {
                     <a href="/tretmani/podocnjaci">{t.podocnjaci}</a>
                     <a href="/tretmani/podbradak">{t.podbradak}</a>
                     <a href="/tretmani/usne-fileri">{t.usneFileri}</a>
-                    <a href="/tretmani/estetika-kozmetologija">{t.estetikaKozmetologija}</a>
+                    {/* <a href="/tretmani/estetika-kozmetologija">{t.estetikaKozmetologija}</a> */}
 
                     <span className="header-dropdown-subheading">{t.tijelo}</span>
                     <a href="/tretmani/celulit">{t.celulit}</a>
@@ -96,7 +96,7 @@ export default function Header() {
                     <a href="/tretmani/test-intolerancija">{t.testIntolerancije}</a>
                     {/* <a href="/tretmani/test-alergije">{t.testAlergije}</a> */}
                     {/* <a href="/tretmani/opca-medicina">{t.opcaMedicina}</a> */}
-                    <a href="/tretmani/medicinske-intervencije">{t.medicinskeIntervencije}</a>
+                    {/* <a href="/tretmani/medicinske-intervencije">{t.medicinskeIntervencije}</a> */}
                     <a href="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</a>
                     <a href="/tretmani/nutricionizam">{t.nutricionizam}</a>
                   </div>
@@ -154,7 +154,7 @@ export default function Header() {
               <a href="/tretmani/podocnjaci" onClick={closeMenus}>{t.podocnjaci}</a>
               <a href="/tretmani/podbradak" onClick={closeMenus}>{t.podbradak}</a>
               <a href="/tretmani/usne-fileri" onClick={closeMenus}>{t.usneFileri}</a>
-              <a href="/tretmani/estetika-kozmetologija" onClick={closeMenus}>{t.estetikaKozmetologija}</a>
+              {/* <a href="/tretmani/estetika-kozmetologija" onClick={closeMenus}>{t.estetikaKozmetologija}</a> */}
 
               <span className="header-dropdown-subheading">{t.tijelo}</span>
               <a href="/tretmani/celulit" onClick={closeMenus}>{t.celulit}</a>
@@ -169,7 +169,7 @@ export default function Header() {
               <a href="/tretmani/test-intolerancija" onClick={closeMenus}>{t.testIntolerancije}</a>
               {/* <a href="/tretmani/test-alergije" onClick={closeMenus}>{t.testAlergije}</a> */}
               {/* <a href="/tretmani/opca-medicina" onClick={closeMenus}>{t.opcaMedicina}</a> */}
-              <a href="/tretmani/medicinske-intervencije" onClick={closeMenus}>{t.medicinskeIntervencije}</a>
+              {/* <a href="/tretmani/medicinske-intervencije" onClick={closeMenus}>{t.medicinskeIntervencije}</a> */}
               <a href="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</a>
               <a href="/tretmani/nutricionizam" onClick={closeMenus}>{t.nutricionizam}</a>
             </div>

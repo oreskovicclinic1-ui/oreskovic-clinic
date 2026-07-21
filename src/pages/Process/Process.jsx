@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import './Process.css';
 
 const steps = [
-  { number: '01', title: 'Konsultacija', text: 'Razgovor i analiza vaših potreba.' },
+  { number: '01', title: 'Konzultacija', text: 'Razgovor i analiza vaših potreba.' },
   { number: '02', title: 'Procjena', text: 'Stručna procjena zdravstvenog stanja.' },
   { number: '03', title: 'Plan tretmana', text: 'Definiranje najbolje metode za vas.' },
   { number: '04', title: 'Izvođenje tretmana', text: 'Profesionalna, precizna procedura.' },

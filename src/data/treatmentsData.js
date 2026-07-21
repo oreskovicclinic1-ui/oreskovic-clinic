@@ -16,17 +16,17 @@ const genericFaq = [
   {
     question: 'Koliko traje jedan tretman?',
     answer:
-      'Ovisno o tretmanu, između 20 i 45 minuta. Tačno trajanje za vaš odabrani tretman saznat ćete na besplatnoj konsultaciji.',
+      'Ovisno o tretmanu, između 20 i 45 minuta. Točno trajanje za vaš odabrani tretman saznat ćete na besplatnoj konzultaciji.',
   },
   {
     question: 'Kada su vidljivi prvi rezultati?',
     answer:
-      'Kod većine tretmana prvi rezultati su vidljivi već nakon jednog do dva tretmana, dok se puni efekat postiže kroz preporučeni broj tretmana u paketu.',
+      'Kod većine tretmana prvi rezultati vidljivi su već nakon jednog do dva tretmana, dok se puni učinak postiže kroz preporučeni broj tretmana u paketu.',
   },
   {
-    question: 'Postoji li period oporavka?',
+    question: 'Postoji li razdoblje oporavka?',
     answer:
-      'Ne — svi naši tretmani su neinvazivni, bez perioda oporavka. Možete se odmah vratiti svojim svakodnevnim aktivnostima.',
+      'Ne — svi naši tretmani su neinvazivni, bez razdoblja oporavka. Odmah se možete vratiti svojim svakodnevnim aktivnostima.',
   },
 ];
 
@@ -398,7 +398,7 @@ export const treatments = {
     faq: genericFaq,
   },
 
-  'usne-fileri': {
+'usne-fileri': {
     pricingId: 'usne-fileri',
     slug: 'usne-fileri',
     name: 'Povećavanje usana dermalnim filerima',
@@ -406,9 +406,9 @@ export const treatments = {
     heroImage: '/treatments/usne-fileri.webp',
     pricingImage: '/treatments/usne-fileri-pricing.webp',
     shortBenefit:
-      'Punije, hidratizirane usne prirodnog oblika. Koristimo filere na bazi hijaluronske kiseline, uz trenutno vidljiv rezultat. Efekat traje 6 do 12 mjeseci. (generički)',
+      'Punije, hidratizirane usne prirodnog oblika. Koristimo filere na bazi hijaluronske kiseline, uz trenutno vidljiv rezultat. Efekat traje 6 do 12 mjeseci.',
     description:
-      'Oblikovanje i hidratacija usana dermalnim filerima na bazi hijaluronske kiseline — prirodne tvari koju tijelo samo proizvodi. Rezultat je punija, simetrična i hidratizirana usna linija, prilagođena crtama vašeg lica. (generički)',
+      'Oblikovanje i hidratacija usana dermalnim filerima na bazi hijaluronske kiseline — prirodne tvari koju tijelo samo proizvodi. Postupak traje kratko, gotovo je bezbolan uz lokalnu anesteziju u sastavu samog filera, a rezultat je punija, simetrična i hidratizirana usna linija, prilagođena crtama vašeg lica. Volumen i oblik uvijek prilagođavamo individualno, tako da rezultat izgleda prirodno, ne pretjerano.',
     highlights: [
       'Filer na bazi hijaluronske kiseline',
       'Trenutan vidljiv rezultat',
@@ -421,11 +421,11 @@ export const treatments = {
       { title: 'Kontrola', text: 'Kontrolni pregled nakon 2 tjedna radi eventualne korekcije.' },
     ],
     forWhom:
-      'Tretman je namijenjen svima koji žele punije ili simetričnije usne, uz prirodan izgled prilagođen crtama lica. (generički)',
+      'Tretman je namijenjen svima koji žele punije ili simetričnije usne, uz prirodan izgled prilagođen crtama lica. Pogodan je i za prvo iskustvo sa filerima, kao i za redovnu njegu za one koji ga već koriste.',
     faq: genericFaq,
   },
 
-  'jacanje-misica': {
+'jacanje-misica': {
     pricingId: 'jacanje-misica',
     slug: 'jacanje-misica',
     name: 'Tretmani jačanja mišića',
@@ -433,9 +433,9 @@ export const treatments = {
     heroImage: '/treatments/jacanje-misica.webp',
     pricingImage: '/treatments/jacanje-misica-pricing.webp',
     shortBenefit:
-      'Jači, definisaniji mišići — bez sati provedenih u teretani. Elektromagnetna stimulacija izaziva kontrakcije koje se ne mogu postići voljnim vježbanjem. Djeluje na trbuh, stražnjicu, ruke i noge. (generički)',
+      'Jači, definisaniji mišići — bez sati provedenih u teretani. Elektromagnetna stimulacija izaziva kontrakcije koje se ne mogu postići voljnim vježbanjem. Djeluje na trbuh, stražnjicu, ruke i noge.',
     description:
-      'Elektromagnetna stimulacija potiče intenzivne mišićne kontrakcije koje se ne mogu postići voljnim vježbanjem, ubrzavajući izgradnju mišićne mase i definiciju tretiranog područja. (generički)',
+      'Elektromagnetna stimulacija potiče intenzivne mišićne kontrakcije koje se ne mogu postići voljnim vježbanjem, čak ni kod redovnog treniranja. Tretman ubrzava izgradnju mišićne mase i definiciju tretiranog područja, uz istovremeno smanjenje masnih naslaga u tom dijelu tijela. Svaki tretman traje oko 30 minuta, tokom kojih mišić prođe kroz na hiljade kontrakcija.',
     highlights: [
       'Ekvivalent tisućama kontrakcija u jednom tretmanu',
       'Bez napora i bez perioda oporavka',
@@ -448,11 +448,11 @@ export const treatments = {
       { title: 'Serija tretmana', text: 'Za vidljive rezultate preporučuje se serija od nekoliko tretmana.' },
     ],
     forWhom:
-      'Tretman je namijenjen osobama koje žele dodatno definisati i ojačati mišiće, kao nadopunu redovnoj fizičkoj aktivnosti ili kao alternativu za one s manjkom vremena za trening. (generički)',
+      'Tretman je namijenjen osobama koje žele dodatno definisati i ojačati mišiće, kao nadopunu redovnoj fizičkoj aktivnosti ili kao alternativu za one s manjkom vremena za trening. Pogodan je i za one koji se oporavljaju od manjka mišićnog tonusa, ili žele ubrzati vidljive rezultate uz postojeći trening.',
     faq: genericFaq,
   },
 
-  straznjica: {
+straznjica: {
     pricingId: 'straznjica',
     slug: 'straznjica',
     name: 'Tretmani podizanja i učvršćivanja stražnjice',
@@ -460,9 +460,9 @@ export const treatments = {
     heroImage: '/treatments/straznjica.webp',
     pricingImage: '/treatments/straznjica-pricing.webp',
     shortBenefit:
-      'Podignuta, oblikovana i učvršćena stražnjica, bez operativnog zahvata. Kombinacija mišićne stimulacije i zatezanja kože daje vidljive rezultate kroz seriju tretmana. Bez perioda oporavka, odmah se vraćate svakodnevnim aktivnostima. (generički)',
+      'Podignuta, oblikovana i učvršćena stražnjica, bez operativnog zahvata. Kombinacija mišićne stimulacije i zatezanja kože daje vidljive rezultate kroz seriju tretmana. Bez perioda oporavka, odmah se vraćate svakodnevnim aktivnostima.',
     description:
-      'Kombinacija elektromagnetne stimulacije mišića i zatezanja kože oblikuje, podiže i učvršćuje stražnjicu, bez kirurškog zahvata i bez perioda oporavka. (generički)',
+      'Kombinacija elektromagnetne stimulacije mišića i zatezanja kože oblikuje, podiže i učvršćuje stražnjicu, bez kirurškog zahvata i bez perioda oporavka. Elektromagnetni impulsi izazivaju intenzivne kontrakcije koje jačaju i tonizuju mišiće, dok se istovremeno potiče proizvodnja kolagena za zategnutiju kožu u tom području. Rezultat je vidljivo podignuta i oblikovanija stražnjica, uz prirodan izgled.',
     highlights: [
       'Podiže i oblikuje stražnjicu',
       'Zateže kožu tretiranog područja',
@@ -475,36 +475,36 @@ export const treatments = {
       { title: 'Serija tretmana', text: 'Za optimalne rezultate preporučuje se paket od više tretmana.' },
     ],
     forWhom:
-      'Tretman je namijenjen svima koji žele podignutiju, oblikovaniju i učvršćeniju stražnjicu, bez operativnog zahvata. (generički)',
+      'Tretman je namijenjen svima koji žele podignutiju, oblikovaniju i učvršćeniju stražnjicu, bez operativnog zahvata. Pogodan je i kao dopuna redovnom treningu, i kao samostalno rješenje za one koji žele vidljive rezultate bez odlaska u teretanu.',
     faq: genericFaq,
   },
 
-  'estetika-kozmetologija': {
-    pricingId: 'estetika-kozmetologija',
-    slug: 'estetika-kozmetologija',
-    name: 'Estetika i kozmetologija (generic)',
-    category: 'Lice',
-    heroImage: '/treatments/estetika-kozmetologija.webp',
-    pricingImage: '/treatments/estetika-kozmetologija-pricing.webp',
-    shortBenefit:
-      'Kompletna njega lica na jednom mjestu — od laserske epilacije do dubinske hidratacije. Kombiniramo provjerene metode za zdraviju, sjajniju kožu. Svaki tretman prilagođavamo individualno vašem tipu kože.',
-    description:
-      'Pregled naših najtraženijih estetskih i kozmetoloških tretmana — od laserske epilacije, preko Hydrafaciala i skin-boostera, do hidro-dermoabrazije i radiofrekventne njege kože. Svaki tretman biramo i prilagođavamo prema potrebama vaše kože.',
-    highlights: [
-      'Više tretmana na jednom mjestu',
-      'Prilagođeno tipu i stanju kože',
-      'Moderna oprema i provjerene metode',
-      'Bez dugog perioda oporavka',
-    ],
-    process: [
-      { title: 'Konsultacija', text: 'Analiziramo stanje vaše kože i predlažemo najprikladniji tretman.' },
-      { title: 'Tretman', text: 'Odabrani tretman provodimo prilagođenom tehnikom i opremom.' },
-      { title: 'Njega nakon tretmana', text: 'Dajemo preporuke za njegu kože kod kuće radi dužeg trajanja rezultata.' },
-    ],
-    forWhom:
-      'Namijenjeno svima koji žele unaprijediti izgled i zdravlje kože, bez obzira na tip kože ili specifičan problem koji žele riješiti.',
-    faq: genericFaq,
-  },
+  // 'estetika-kozmetologija': {
+  //   pricingId: 'estetika-kozmetologija',
+  //   slug: 'estetika-kozmetologija',
+  //   name: 'Estetika i kozmetologija (generic)',
+  //   category: 'Lice',
+  //   heroImage: '/treatments/estetika-kozmetologija.webp',
+  //   pricingImage: '/treatments/estetika-kozmetologija-pricing.webp',
+  //   shortBenefit:
+  //     'Kompletna njega lica na jednom mjestu — od laserske epilacije do dubinske hidratacije. Kombiniramo provjerene metode za zdraviju, sjajniju kožu. Svaki tretman prilagođavamo individualno vašem tipu kože.',
+  //   description:
+  //     'Pregled naših najtraženijih estetskih i kozmetoloških tretmana — od laserske epilacije, preko Hydrafaciala i skin-boostera, do hidro-dermoabrazije i radiofrekventne njege kože. Svaki tretman biramo i prilagođavamo prema potrebama vaše kože.',
+  //   highlights: [
+  //     'Više tretmana na jednom mjestu',
+  //     'Prilagođeno tipu i stanju kože',
+  //     'Moderna oprema i provjerene metode',
+  //     'Bez dugog perioda oporavka',
+  //   ],
+  //   process: [
+  //     { title: 'Konsultacija', text: 'Analiziramo stanje vaše kože i predlažemo najprikladniji tretman.' },
+  //     { title: 'Tretman', text: 'Odabrani tretman provodimo prilagođenom tehnikom i opremom.' },
+  //     { title: 'Njega nakon tretmana', text: 'Dajemo preporuke za njegu kože kod kuće radi dužeg trajanja rezultata.' },
+  //   ],
+  //   forWhom:
+  //     'Namijenjeno svima koji žele unaprijediti izgled i zdravlje kože, bez obzira na tip kože ili specifičan problem koji žele riješiti.',
+  //   faq: genericFaq,
+  // },
 
   // 'opca-medicina': {
   //   pricingId: 'opca-medicina',
@@ -533,37 +533,37 @@ export const treatments = {
   //   faq: genericFaq,
   // },
 
-  'medicinske-intervencije': {
-    pricingId: 'medicinske-intervencije',
-    slug: 'medicinske-intervencije',
-    name: 'Medicinske intervencije i terapije (generic)',
-    category: 'Zdravstvene usluge',
-    heroImage: '/treatments/medicinske-intervencije.webp',
-    pricingImage: '/treatments/medicinske-intervencije-pricing.webp',
-    shortBenefit:
-      'Brza i stručna pomoć za manje medicinske intervencije. Od infuzija do zbrinjavanja rana, sve u sigurnom ordinacijskom okruženju. Profesionalno osoblje, bez čekanja.',
-    description:
-      'Pružamo manje medicinske intervencije i terapije — intravenske i intramuskularne injekcije, previjanje rana, zaustavljanje krvarenja, tamponadu nosa i uklanjanje stranih tijela. Sve u sigurnom, kontroliranom okruženju.',
-    highlights: [
-      'Stručno osoblje i sterilno okruženje',
-      'Brza intervencija bez čekanja',
-      'Širok raspon manjih zahvata',
-      'Pogodno i za hitne situacije',
-    ],
-    process: [
-      { title: 'Procjena', text: 'Kratka procjena stanja i potrebne intervencije.' },
-      { title: 'Intervencija', text: 'Intervencija se izvodi stručno i uz maksimalnu pažnju za vašu udobnost.' },
-      { title: 'Upute za dalje', text: 'Dobivate upute za njegu i eventualnu kontrolu.' },
-    ],
-    forWhom:
-      'Namijenjeno svima kojima je potrebna manja medicinska intervencija — od injekcija do zbrinjavanja manjih ozljeda.',
-    faq: genericFaq,
-  },
+  // 'medicinske-intervencije': {
+  //   pricingId: 'medicinske-intervencije',
+  //   slug: 'medicinske-intervencije',
+  //   name: 'Medicinske intervencije i terapije (generic)',
+  //   category: 'Zdravstvene usluge',
+  //   heroImage: '/treatments/medicinske-intervencije.webp',
+  //   pricingImage: '/treatments/medicinske-intervencije-pricing.webp',
+  //   shortBenefit:
+  //     'Brza i stručna pomoć za manje medicinske intervencije. Od infuzija do zbrinjavanja rana, sve u sigurnom ordinacijskom okruženju. Profesionalno osoblje, bez čekanja.',
+  //   description:
+  //     'Pružamo manje medicinske intervencije i terapije — intravenske i intramuskularne injekcije, previjanje rana, zaustavljanje krvarenja, tamponadu nosa i uklanjanje stranih tijela. Sve u sigurnom, kontroliranom okruženju.',
+  //   highlights: [
+  //     'Stručno osoblje i sterilno okruženje',
+  //     'Brza intervencija bez čekanja',
+  //     'Širok raspon manjih zahvata',
+  //     'Pogodno i za hitne situacije',
+  //   ],
+  //   process: [
+  //     { title: 'Procjena', text: 'Kratka procjena stanja i potrebne intervencije.' },
+  //     { title: 'Intervencija', text: 'Intervencija se izvodi stručno i uz maksimalnu pažnju za vašu udobnost.' },
+  //     { title: 'Upute za dalje', text: 'Dobivate upute za njegu i eventualnu kontrolu.' },
+  //   ],
+  //   forWhom:
+  //     'Namijenjeno svima kojima je potrebna manja medicinska intervencija — od injekcija do zbrinjavanja manjih ozljeda.',
+  //   faq: genericFaq,
+  // },
 
-  'fizikalna-terapija': {
+'fizikalna-terapija': {
     pricingId: 'fizikalna-terapija',
     slug: 'fizikalna-terapija',
-    name: 'Fizikalna i regenerativna terapija (generic)',
+    name: 'Fizikalna i regenerativna terapija',
     category: 'Zdravstvene usluge',
     heroImage: '/treatments/fizikalna-terapija.webp',
     pricingImage: '/treatments/fizikalna-terapija-pricing.webp',
@@ -588,31 +588,31 @@ export const treatments = {
   },
 
   nutricionizam: {
-    pricingId: 'nutricionizam',
-    slug: 'nutricionizam',
-    name: 'Nutricionizam i savjetovanje (generic)',
-    category: 'Zdravstvene usluge',
-    heroImage: '/treatments/nutricionizam.webp',
-    pricingImage: '/treatments/nutricionizam-pricing.webp',
-    shortBenefit:
-      'Personalizovan plan ishrane baziran na stvarnoj analizi vašeg tijela. Stručno savjetovanje za mršavljenje, energiju i opće zdravlje. Konkretan plan, ne generički savjeti.',
-    description:
-      'Kroz tjelesnu analizu i stručno nutricionističko savjetovanje kreiramo plan ishrane prilagođen vašim ciljevima — bilo da je riječ o mršavljenju, više energije, ili općem poboljšanju zdravlja.',
-    highlights: [
-      'Detaljna tjelesna analiza s tumačenjem',
-      'Individualno prilagođen plan ishrane',
-      'Stručno vođeno savjetovanje',
-      'Fokus na dugoročne, održive rezultate',
-    ],
-    process: [
-      { title: 'Analiza', text: 'Provodimo tjelesnu analizu i razgovor o vašim ciljevima.' },
-      { title: 'Plan', text: 'Kreiramo personalizovan plan ishrane prilagođen vašem stilu života.' },
-      { title: 'Praćenje', text: 'Pratimo napredak i po potrebi prilagođavamo plan.' },
-    ],
-    forWhom:
-      'Namijenjeno svima koji žele mršaviti, poboljšati energiju, ili jednostavno razumjeti kako ishrana utječe na njihovo zdravlje.',
-    faq: genericFaq,
-  },
+      pricingId: 'nutricionizam',
+      slug: 'nutricionizam',
+      name: 'Nutricionizam i savjetovanje',
+      category: 'Zdravstvene usluge',
+      heroImage: '/treatments/nutricionizam.webp',
+      pricingImage: '/treatments/nutricionizam-pricing.webp',
+      shortBenefit:
+        'Personalizovan plan ishrane baziran na stvarnoj analizi vašeg tijela. Stručno savjetovanje za mršavljenje, energiju i opće zdravlje. Konkretan plan, ne generički savjeti.',
+      description:
+        'Kroz tjelesnu analizu i stručno nutricionističko savjetovanje kreiramo plan ishrane prilagođen vašim ciljevima — bilo da je riječ o mršavljenju, više energije, ili općem poboljšanju zdravlja.',
+      highlights: [
+        'Detaljna tjelesna analiza s tumačenjem',
+        'Individualno prilagođen plan ishrane',
+        'Stručno vođeno savjetovanje',
+        'Fokus na dugoročne, održive rezultate',
+      ],
+      process: [
+        { title: 'Analiza', text: 'Provodimo tjelesnu analizu i razgovor o vašim ciljevima.' },
+        { title: 'Plan', text: 'Kreiramo personalizovan plan ishrane prilagođen vašem stilu života.' },
+        { title: 'Praćenje', text: 'Pratimo napredak i po potrebi prilagođavamo plan.' },
+      ],
+      forWhom:
+        'Namijenjeno svima koji žele mršaviti, poboljšati energiju, ili jednostavno razumjeti kako ishrana utječe na njihovo zdravlje.',
+      faq: genericFaq,
+    },
 };
 
 export function getTreatmentBySlug(slug) {

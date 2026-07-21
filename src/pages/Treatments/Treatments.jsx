@@ -7,7 +7,7 @@ const treatments = [
   { name: 'Uklanjanje podočnjaka', category: 'Lice', slug: 'podocnjaci' },
   { name: 'Uklanjanje podbratka', category: 'Lice', slug: 'podbradak' },
   { name: 'Povećavanje usana filerima', category: 'Lice', slug: 'usne-fileri' },
-  { name: 'Estetika i kozmetologija', category: 'Lice', slug: 'estetika-kozmetologija' },
+  // { name: 'Estetika i kozmetologija', category: 'Lice', slug: 'estetika-kozmetologija' },
   { name: 'Anti celulitni tretmani', category: 'Tijelo', slug: 'celulit' },
   { name: 'Tretmani mršavljenja', category: 'Tijelo', slug: 'mrsavljenje' },
   { name: 'Trajno uklanjanje dlačica', category: 'Tijelo', slug: 'dlacice' },
@@ -18,7 +18,7 @@ const treatments = [
   { name: 'Test intolerancije na hranu', category: 'Zdravstveni tretman', slug: 'test-intolerancija' },
   // { name: 'Test na alergije', category: 'Zdravstveni tretman', slug: 'test-alergije' },
   // { name: 'Opća medicina i dijagnostika', category: 'Zdravstveni tretman', slug: 'opca-medicina' },
-  { name: 'Medicinske intervencije i terapije', category: 'Zdravstveni tretman', slug: 'medicinske-intervencije' },
+  // { name: 'Medicinske intervencije i terapije', category: 'Zdravstveni tretman', slug: 'medicinske-intervencije' },
   { name: 'Fizikalna i regenerativna terapija', category: 'Zdravstveni tretman', slug: 'fizikalna-terapija' },
   { name: 'Nutricionizam i savjetovanje', category: 'Zdravstveni tretman', slug: 'nutricionizam' },
 ];
