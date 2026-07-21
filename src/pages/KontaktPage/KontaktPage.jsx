@@ -2,11 +2,29 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './KontaktPage.css';
 
-function sendContactMessage(formData) {
-  return new Promise((resolve) => {
-    console.log('Contact message submitted (not yet wired to a real backend):', formData);
-    setTimeout(resolve, 400);
+const WEB3FORMS_ACCESS_KEY = '53e6afee-4723-4839-a948-25990af65140';
+
+async function sendContactMessage(formData) {
+  const response = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify({
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: 'Nova poruka sa kontakt forme',
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || 'Nije navedeno',
+      message: formData.message,
+    }),
   });
+
+  const result = await response.json();
+  if (!result.success) {
+    throw new Error(result.message || 'Web3Forms submission failed');
+  }
 }
 
 const initialForm = {
@@ -87,6 +105,17 @@ export default function KontaktPage() {
 
         <div className="kontakt-form-card">
           <form onSubmit={handleSubmit} className="kontakt-form">
+            {/* Honeypot - hidden from real users via CSS, bots that
+                auto-fill every field will fill this too. If it's
+                filled, Web3Forms silently treats it as spam. */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="kontakt-honeypot"
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
             <div className="kontakt-field">
               <label htmlFor="name">Ime i prezime *</label>
               <input

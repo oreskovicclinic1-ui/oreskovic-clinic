@@ -3,15 +3,34 @@ import { useNavigate } from 'react-router-dom';
 import { categories } from '../../data/pricingData';
 import './RezervacijaPage.css';
 
-// TODO: wire this up to a real submission service (Formspree, EmailJS,
-// etc.) once one is chosen - for now it just simulates a successful
-// send so the rest of the flow (redirect, thank-you page) can be built
-// and tested end to end.
-function sendReservation(formData) {
-  return new Promise((resolve) => {
-    console.log('Reservation submitted (not yet wired to a real backend):', formData);
-    setTimeout(resolve, 400);
+const WEB3FORMS_ACCESS_KEY = '625b24b6-bfbd-4bc6-8b3d-fee8d8af9cfc';
+
+async function sendReservation(formData) {
+  const response = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify({
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `Nova rezervacija — ${
+        formData.inquiryType === 'rezervacija' ? 'Rezervacija termina' : 'Opći upit'
+      }`,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      'Vrsta upita':
+        formData.inquiryType === 'rezervacija' ? 'Rezervacija termina' : 'Opći upit',
+      Tretman: formData.treatment || 'Nije odabrano',
+      message: formData.message || '(bez dodatne poruke)',
+    }),
   });
+
+  const result = await response.json();
+  if (!result.success) {
+    throw new Error(result.message || 'Web3Forms submission failed');
+  }
 }
 
 const initialForm = {
@@ -76,7 +95,7 @@ export default function RezervacijaPage() {
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
-              Besplatna konzultacija
+              Besplatna konsultacija
             </span>
             <span className="rezervacija-highlight-chip">
               <span className="rezervacija-highlight-check">✓</span>
@@ -98,6 +117,17 @@ export default function RezervacijaPage() {
 
         <div className="rezervacija-form-card">
           <form onSubmit={handleSubmit} className="rezervacija-form">
+            {/* Honeypot - hidden from real users via CSS, bots that
+                auto-fill every field will fill this too. If it's
+                filled, Web3Forms silently treats it as spam. */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              className="rezervacija-honeypot"
+              tabIndex="-1"
+              autoComplete="off"
+            />
+
             <div className="rezervacija-field">
               <label htmlFor="name">Ime i prezime *</label>
               <input
