@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { categories } from '../../data/pricingData';
 import './RezervacijaPage.css';
 
-const WEB3FORMS_ACCESS_KEY = '625b24b6-bfbd-4bc6-8b3d-fee8d8af9cfc';
+const WEB3FORMS_ACCESS_KEY = 'ffd88cc0-791d-4655-a489-187347ca8efe';
 
 async function sendReservation(formData) {
   const response = await fetch('https://api.web3forms.com/submit', {

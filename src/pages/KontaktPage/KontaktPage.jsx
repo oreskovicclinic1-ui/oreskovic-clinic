@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './KontaktPage.css';
 
-const WEB3FORMS_ACCESS_KEY = '53e6afee-4723-4839-a948-25990af65140';
+const WEB3FORMS_ACCESS_KEY = 'd2bbe892-cc18-44af-b59d-d3b76c8c7f6b';
 
 async function sendContactMessage(formData) {
   const response = await fetch('https://api.web3forms.com/submit', {
