@@ -52,7 +52,7 @@ export default function TrustBar() {
           </div>
 
           <div className="trust-stat">
-            <span className="trust-stat-number">1000</span>
+            <span className="trust-stat-number">1000+</span>
             <span className="trust-stat-label">Zadovoljnih pacijenata</span>
           </div>
 

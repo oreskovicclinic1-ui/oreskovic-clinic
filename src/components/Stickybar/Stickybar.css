@@ -1,4 +1,5 @@
 .sticky-bar {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -105,6 +106,10 @@
 }
 
 @media (min-width: 640px) {
+  .sticky-bar {
+    display: block;
+  }
+
   .sticky-bar-phones {
     display: flex;
   }

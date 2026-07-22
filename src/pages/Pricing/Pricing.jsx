@@ -70,9 +70,9 @@ function PricingPanel({ category, imageSide }) {
           ))}
         </div>
 
-        <Link to={category.moreInfoHref} className="pricing-panel-link">
+        {/* <Link to={category.moreInfoHref} className="pricing-panel-link">
           Više informacija →
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

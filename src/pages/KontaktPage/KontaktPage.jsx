@@ -143,7 +143,7 @@ export default function KontaktPage() {
             </div>
 
             <div className="kontakt-field">
-              <label htmlFor="phone">Broj telefona (opcionalno)</label>
+              <label htmlFor="phone">Broj telefona *</label>
               <input
                 id="phone"
                 name="phone"
@@ -151,6 +151,7 @@ export default function KontaktPage() {
                 value={form.phone}
                 onChange={handleChange}
                 placeholder="+385 9X XXX XXXX"
+                required
               />
             </div>
 

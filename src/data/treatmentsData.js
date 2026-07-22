@@ -34,7 +34,7 @@ export const treatments = {
 'test-intolerancija': {
     pricingId: 'test-intolerancija',
     slug: 'test-intolerancija',
-    name: 'Test intolerancije na hranu',
+    name: 'Test intolerancije na hranu + Status vitamina i minerala + Test na alergije',
     category: 'Zdravstvene usluge',
     heroImage: '/treatments/test-intolerancija.webp',
     pricingImage: '/treatments/test-intolerancija-pricing.webp',

@@ -102,6 +102,60 @@ export default function TreatmentPage() {
         </div>
       </section>
 
+      {/* CIJENA - odmah ispod hero-a */}
+      {pricing && (
+        <section className="treatment-pricing section">
+          <div className="container treatment-pricing-grid">
+            <div className="treatment-pricing-image">
+              <img
+                src={treatment.pricingImage || treatment.heroImage}
+                alt={treatment.name}
+                loading="lazy"
+              />
+            </div>
+
+            <div className="treatment-pricing-content">
+              <p className="treatment-section-kicker treatment-section-kicker-left">CIJENA</p>
+              <h2 className="treatment-pricing-title">
+                Od <em>{getStartingPrice(pricing)}€</em>
+              </h2>
+
+              <div className="treatment-pricing-tiers">
+                {pricing.kind === 'simple' &&
+                  pricing.tiers.map((tier) => (
+                    <div className="treatment-tier-row" key={tier.label}>
+                      <span className="treatment-tier-label">{tier.label}</span>
+                      <span className="treatment-tier-price">
+                        {tier.oldPrice && (
+                          <span className="treatment-tier-old">{tier.oldPrice}</span>
+                        )}
+                        <span className="treatment-tier-current">{tier.price}</span>
+                      </span>
+                    </div>
+                  ))}
+
+                {pricing.kind === 'grouped' && (
+                  <p className="treatment-pricing-note">
+                    Ovaj tretman ima više regija i paketa — pogledajte pun cjenik za detalje.
+                  </p>
+                )}
+              </div>
+
+              <div className="treatment-pricing-actions">
+                <Link to="/cjenik" className="treatment-pricing-link">
+                  Pogledajte pun cjenik →
+                </Link>
+
+              <Link to="/rezervacija" className="treatment-cta treatment-cta-primary">
+                Rezervirajte termin
+                <span className="treatment-cta-arrow">→</span>
+              </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* O TRETMANU + KOME JE NAMIJENJENO */}
       <section className="treatment-about section">
         <div className="container treatment-about-grid">
@@ -169,60 +223,6 @@ export default function TreatmentPage() {
           </div>
         </section>
       ))}
-
-      {/* CIJENA */}
-      {pricing && (
-        <section className="treatment-pricing section">
-          <div className="container treatment-pricing-grid">
-            <div className="treatment-pricing-image">
-              <img
-                src={treatment.pricingImage || treatment.heroImage}
-                alt={treatment.name}
-                loading="lazy"
-              />
-            </div>
-
-            <div className="treatment-pricing-content">
-              <p className="treatment-section-kicker treatment-section-kicker-left">CIJENA</p>
-              <h2 className="treatment-pricing-title">
-                Od <em>{getStartingPrice(pricing)}€</em>
-              </h2>
-
-              <div className="treatment-pricing-tiers">
-                {pricing.kind === 'simple' &&
-                  pricing.tiers.map((tier) => (
-                    <div className="treatment-tier-row" key={tier.label}>
-                      <span className="treatment-tier-label">{tier.label}</span>
-                      <span className="treatment-tier-price">
-                        {tier.oldPrice && (
-                          <span className="treatment-tier-old">{tier.oldPrice}</span>
-                        )}
-                        <span className="treatment-tier-current">{tier.price}</span>
-                      </span>
-                    </div>
-                  ))}
-
-                {pricing.kind === 'grouped' && (
-                  <p className="treatment-pricing-note">
-                    Ovaj tretman ima više regija i paketa — pogledajte pun cjenik za detalje.
-                  </p>
-                )}
-              </div>
-
-              <div className="treatment-pricing-actions">
-                <Link to="/cjenik" className="treatment-pricing-link">
-                  Pogledajte pun cjenik →
-                </Link>
-
-              <Link to="/rezervacija" className="treatment-cta treatment-cta-primary">
-                Rezervirajte termin
-                <span className="treatment-cta-arrow">→</span>
-              </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* FAQ */}
       {treatment.faq && (
