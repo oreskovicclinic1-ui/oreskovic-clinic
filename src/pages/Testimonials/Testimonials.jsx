@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import './Testimonials.css';
 
+// To add a new review later: just add one object here. `location` is
+// optional (shows as a small tag on the card if present).
 const testimonials = [
   {
     name: 'Monika Mamić',
@@ -259,7 +261,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="testimonials section" ref={sectionRef}>
+    <section className="testimonials section" ref={sectionRef} id="recenzije">
       <div className="container testimonials-intro reveal">
         <p className="testimonials-kicker">RECENZIJE</p>
         <h2 className="testimonials-title">

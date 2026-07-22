@@ -86,10 +86,10 @@ export default function TreatmentPage() {
             <p className="treatment-benefit">{treatment.shortBenefit}</p>
 
             <div className="treatment-hero-actions">
-              <a href="/rezervacija" className="treatment-cta treatment-cta-primary">
+              <Link to="/rezervacija" className="treatment-cta treatment-cta-primary">
                 Rezervirajte termin
                 <span className="treatment-cta-arrow">→</span>
-              </a>
+              </Link>
               <Link to="/cjenik" className="treatment-cta treatment-cta-secondary">
                 Pogledajte cjenik
               </Link>
@@ -214,10 +214,10 @@ export default function TreatmentPage() {
                   Pogledajte pun cjenik →
                 </Link>
 
-                <a href="/rezervacija" className="treatment-cta treatment-cta-primary">
-                  Rezervirajte termin
-                  <span className="treatment-cta-arrow">→</span>
-                </a>
+              <Link to="/rezervacija" className="treatment-cta treatment-cta-primary">
+                Rezervirajte termin
+                <span className="treatment-cta-arrow">→</span>
+              </Link>
               </div>
             </div>
           </div>

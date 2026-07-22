@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Stickybar.css';
+import { Link } from 'react-router-dom';
 
 export default function StickyBar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,9 +34,9 @@ export default function StickyBar() {
         </div>
 
         <div className="sticky-bar-actions">
-          <a href="/rezervacija" className="sticky-bar-cta">
-            Rezervirajte termin
-          </a>
+        <Link to="/rezervacija" className="sticky-bar-cta">
+          Rezervirajte termin
+        </Link>
 
           <button
             className="sticky-bar-close"

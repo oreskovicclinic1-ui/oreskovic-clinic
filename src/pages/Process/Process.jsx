@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Process.css';
+import { Link } from 'react-router-dom';
 
 const steps = [
   { number: '01', title: 'Konzultacija', text: 'Razgovor i analiza vaših potreba.' },
@@ -38,9 +39,9 @@ export default function Process() {
           <h2 className="process-title">
             Pet koraka do <em>rezultata</em> kojima možete vjerovati.
           </h2>
-          <a href="/rezervacija" className="process-cta">
-            Rezervirajte sad
-          </a>
+        <Link to="/rezervacija" className="process-cta">
+          Rezervirajte sad
+        </Link>
         </div>
 
         <div className="process-steps">

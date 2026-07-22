@@ -98,15 +98,15 @@ export default function Footer() {
         <div className="footer-column">
           <h4 className="footer-heading">Navigacija</h4>
           <ul className="footer-list">
-            <li><a href="/o-klinici">O klinici</a></li>
+            <li><Link to="/o-klinici">O klinici</Link></li>
             <li>
               <a href="/#tretmani" onClick={handleTretmaniClick}>
                 Tretmani
               </a>
             </li>
-            <li><a href="/cjenik">Cjenik</a></li>
-            <li><a href="/rezultati">Rezultati</a></li>
-            <li><a href="/rezervacija">Rezervacija termina</a></li>
+            <li><Link to="/cjenik">Cjenik</Link></li>
+            <li><Link to="/rezultati">Rezultati</Link></li>
+            <li><Link to="/rezervacija">Rezervacija termina</Link></li>
           </ul>
         </div>
 
@@ -117,13 +117,6 @@ export default function Footer() {
             <li><a href="tel:+385916104690">+385 91 610 4690</a></li>
             <li><a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a></li>
           </ul>
-
-          <form className="footer-newsletter" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Vaš email" className="footer-newsletter-input" required />
-            <button type="submit" className="footer-newsletter-submit">
-              Prijavi se
-            </button>
-          </form>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './FinalCta.css';
 
 export default function FinalCta() {
@@ -34,12 +35,12 @@ export default function FinalCta() {
         </h2>
 
         <p className="final-cta-subtitle">
-          Zakažite besplatnu konzultaciju i saznajte koji je tretman pravi izbor za vas.
+          Zakažite besplatnu konsultaciju i saznajte koji je tretman pravi izbor za vas.
         </p>
 
-        <a href="/rezervacija" className="final-cta-button">
+        <Link to="/rezervacija" className="final-cta-button">
           Rezervirajte termin
-        </a>
+        </Link>
 
         <div className="final-cta-phones">
           <span className="final-cta-phones-label">ili nazovite:</span>
@@ -54,21 +55,17 @@ export default function FinalCta() {
 
         <div className="final-cta-divider"></div>
 
-        <div className="final-cta-newsletter">
-          <p className="final-cta-newsletter-text">
-            Niste spremni za rezervaciju? Prijavite se za novosti i akcije.
-          </p>
-          <form className="final-cta-newsletter-form" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="Vaš email"
-              className="final-cta-newsletter-input"
-              required
-            />
-            <button type="submit" className="final-cta-newsletter-submit">
-              Prijavi se
-            </button>
-          </form>
+        <div className="final-cta-funding">
+          <img
+            src="/logos/eu-logo.webp"
+            alt="Sufinancirano sredstvima Europske unije"
+            className="final-cta-funding-logo"
+          />
+          <img
+            src="/logos/hamag-logo.webp"
+            alt="HAMAG-BICRO"
+            className="final-cta-funding-logo"
+          />
         </div>
       </div>
     </section>

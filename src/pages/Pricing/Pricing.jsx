@@ -5,6 +5,7 @@ import pricing1mobile from '../../assets/pricing1mobile.webp';
 import pricing2mobile from '../../assets/pricing2mobile.webp';
 import { getCategoryById } from '../../data/pricingData';
 import './Pricing.css';
+import { Link } from 'react-router-dom';
 
 const healthIds = ['test-intolerancija', 'terapija-ozljeda', 'vitaminske-infuzije'];
 const aestheticIds = ['podbradak', 'mrsavljenje'];
@@ -69,9 +70,9 @@ function PricingPanel({ category, imageSide }) {
           ))}
         </div>
 
-        <a href={category.moreInfoHref} className="pricing-panel-link">
+        <Link to={category.moreInfoHref} className="pricing-panel-link">
           Više informacija →
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -117,9 +118,9 @@ export default function Pricing() {
       </div>
 
       <div className="container pricing-footer">
-        <a href="/cjenik" className="pricing-cta">
-          Pogledajte cijene svih tretmana
-        </a>
+      <Link to="/cjenik" className="pricing-cta">
+        Pogledajte cijene svih tretmana
+      </Link>
       </div>
     </section>
   );

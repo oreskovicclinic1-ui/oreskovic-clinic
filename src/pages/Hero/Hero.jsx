@@ -1,4 +1,5 @@
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 import hero1 from '../../assets/hero1.jpg';
 
@@ -58,10 +59,10 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="/rezervacija" className="hero-button hero-button-primary">
+            <Link to="/rezervacija" className="hero-button hero-button-primary">
               Rezervirajte svoj termin
               <span className="hero-button-arrow">→</span>
-            </a>
+            </Link>
             <a
               href="#tretmani"
               className="hero-button hero-button-secondary"

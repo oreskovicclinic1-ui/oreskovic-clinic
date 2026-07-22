@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import './AboutClinic.css';
 import pic0 from '../../assets/pic1.webp';
 import pic1 from '/treatments/podbradak.webp';
+import { Link } from 'react-router-dom';
 
 function scrollToSection(e, targetId) {
   e.preventDefault();
@@ -93,9 +94,9 @@ export default function AboutClinic() {
           </div>
 
           <div className="about-actions">
-            <a href="/o-klinici" className="about-button about-button-primary">
+            <Link to="/o-klinici" className="about-button about-button-primary">
               Saznajte više o klinici
-            </a>
+            </Link>
             <a
               href="#tretmani"
               className="about-button about-button-secondary"

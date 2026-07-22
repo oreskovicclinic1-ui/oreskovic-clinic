@@ -4,6 +4,7 @@
     linear-gradient(160deg, var(--color-champagne) 0%, var(--color-ivory) 55%, var(--color-blush) 100%);
   padding-top: 48px;
   padding-bottom: 48px;
+  scroll-margin-top: 100px;
 }
 
 .testimonials-intro {

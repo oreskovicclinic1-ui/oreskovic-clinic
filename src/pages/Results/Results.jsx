@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Results.css';
+import { Link } from 'react-router-dom';
 
 const results = [
   { title: 'Tretmani mršavljenja', image: '/results/02.webp' },
@@ -118,9 +119,9 @@ export default function Results() {
           ))}
         </div>
 
-        <a href="/rezultati" className="results-cta">
-          Pogledajte sve rezultate →
-        </a>
+      <Link to="/rezultati" className="results-cta">
+        Pogledajte sve rezultate →
+      </Link>
       </div>
     </section>
   );

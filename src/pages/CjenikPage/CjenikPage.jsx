@@ -3,6 +3,7 @@ import FinalCta from '../FinalCta/FinalCta';
 import './CjenikPage.css';
 import backgroundImage from '../../assets/cjenik-cover.webp';
 import { categories, getStartingPrice, groupLabels } from '../../data/pricingData';
+import { Link } from 'react-router-dom';
 
 export default function CjenikPage() {
   const [query, setQuery] = useState('');
@@ -76,9 +77,9 @@ export default function CjenikPage() {
           <p className="cjenik-page-intro">
             Pregledajte cijene svih naših tretmana i usluga, pojedinačno ili u paketima.
           </p>
-          <a href="/rezervacija" className="cjenik-page-hero-cta">
-            Rezervirajte termin
-          </a>
+        <Link to="/rezervacija" className="cjenik-page-hero-cta">
+          Rezervirajte termin
+        </Link>
         </div>
       </section>
 
@@ -220,9 +221,9 @@ export default function CjenikPage() {
                   </div>
                 ))}
 
-              <a href="/rezervacija" className="cjenik-detail-cta">
-                Rezervirajte termin
-              </a>
+            <Link to="/rezervacija" className="cjenik-detail-cta">
+              Rezervirajte termin
+            </Link>
             </div>
           </div>
         </div>

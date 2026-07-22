@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Treatments.css';
+import { Link } from 'react-router-dom';
 
 const treatments = [
   { name: 'Anti age tretmani', category: 'Lice', slug: 'anti-age' },
@@ -145,9 +146,9 @@ export default function Treatments() {
           onMouseEnter={() => (isPausedRef.current = true)}
           onMouseLeave={() => (isPausedRef.current = false)}
         >
-          {loopTreatments.map((treatment, index) => (
-            <a
-              href={`/tretmani/${treatment.slug}`}
+        {loopTreatments.map((treatment, index) => (
+            <Link
+              to={`/tretmani/${treatment.slug}`}
               className="treatment-card"
               key={`${treatment.slug}-${index}`}
               draggable={false}
@@ -164,7 +165,7 @@ export default function Treatments() {
                 <span className="treatment-card-name">{treatment.name}</span>
                 <span className="treatment-card-link">Više detalja →</span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

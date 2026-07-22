@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import './ResultsPage.css';
 import backgroundImage from '../../assets/results-cover.webp';
 import FinalCta from '../FinalCta/FinalCta';
+import { Link } from 'react-router-dom';
 
 // To add a new category later: just add one line here, and drop images
 // in /public/results/{id}/1.jpg, 2.jpg, etc. up to {count}.
@@ -134,9 +135,9 @@ export default function ResultsPage() {
             stvaran ishod, ne stock materijal.
           </p>
 
-          <a href="/rezervacija" className="results-page-hero-cta">
-            Rezervirajte termin
-          </a>
+        <Link to="/rezervacija" className="results-page-hero-cta">
+          Rezervirajte termin
+        </Link>
         </div>
       </section>
 
