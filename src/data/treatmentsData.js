@@ -371,32 +371,32 @@ export const treatments = {
     faq: genericFaq,
   },
 
-  botox: {
-    pricingId: 'botox',
-    slug: 'botox',
-    name: 'Tretmani botoksom',
-    category: 'Lice',
-    heroImage: '/treatments/botox.webp',
-    pricingImage: '/treatments/botox-pricing.webp',
-    shortBenefit:
-      'Glatka koža bez mimičnih bora, uz prirodan i suptilan rezultat. Zahvat traje do 20 minuta, a prvi efekti vidljivi su već za nekoliko dana. Rezultati traju 4 do 6 mjeseci. (generički)',
-    description:
-      'Aplikacija botoksa opušta ciljane mišiće lica, uklanjajući mimične bore (čelo, područje oko očiju, između obrva) uz prirodan, suptilan rezultat — bez "zamrznutog" izgleda. Cijena ovisi o broju tretiranih zona. (generički)',
-    highlights: [
-      'Brz zahvat — do 20 minuta',
-      'Vidljiv rezultat nakon 3 do 7 dana',
-      'Rezultati traju 4 do 6 mjeseci',
-      'Minimalna nelagoda tijekom aplikacije',
-    ],
-    process: [
-      { title: 'Konsultacija', text: 'Analiziramo vaše mimične bore i dogovaramo broj zona za tretman.' },
-      { title: 'Aplikacija', text: 'Botoks se ubrizgava precizno u ciljane mišiće tankom iglom.' },
-      { title: 'Kontrola', text: 'Kontrolni pregled nakon 2 tjedna radi provjere rezultata.' },
-    ],
-    forWhom:
-      'Tretman je namijenjen svima koji žele ublažiti mimične bore i osvježiti izgled lica, uz prirodan i suptilan rezultat bez kirurškog zahvata. (generički)',
-    faq: genericFaq,
-  },
+  // botox: {
+  //   pricingId: 'botox',
+  //   slug: 'botox',
+  //   name: 'Tretmani botoksom',
+  //   category: 'Lice',
+  //   heroImage: '/treatments/botox.webp',
+  //   pricingImage: '/treatments/botox-pricing.webp',
+  //   shortBenefit:
+  //     'Glatka koža bez mimičnih bora, uz prirodan i suptilan rezultat. Zahvat traje do 20 minuta, a prvi efekti vidljivi su već za nekoliko dana. Rezultati traju 4 do 6 mjeseci. (generički)',
+  //   description:
+  //     'Aplikacija botoksa opušta ciljane mišiće lica, uklanjajući mimične bore (čelo, područje oko očiju, između obrva) uz prirodan, suptilan rezultat — bez "zamrznutog" izgleda. Cijena ovisi o broju tretiranih zona. (generički)',
+  //   highlights: [
+  //     'Brz zahvat — do 20 minuta',
+  //     'Vidljiv rezultat nakon 3 do 7 dana',
+  //     'Rezultati traju 4 do 6 mjeseci',
+  //     'Minimalna nelagoda tijekom aplikacije',
+  //   ],
+  //   process: [
+  //     { title: 'Konsultacija', text: 'Analiziramo vaše mimične bore i dogovaramo broj zona za tretman.' },
+  //     { title: 'Aplikacija', text: 'Botoks se ubrizgava precizno u ciljane mišiće tankom iglom.' },
+  //     { title: 'Kontrola', text: 'Kontrolni pregled nakon 2 tjedna radi provjere rezultata.' },
+  //   ],
+  //   forWhom:
+  //     'Tretman je namijenjen svima koji žele ublažiti mimične bore i osvježiti izgled lica, uz prirodan i suptilan rezultat bez kirurškog zahvata. (generički)',
+  //   faq: genericFaq,
+  // },
 
 'usne-fileri': {
     pricingId: 'usne-fileri',

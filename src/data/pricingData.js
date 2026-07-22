@@ -101,18 +101,18 @@ export const categories = [
   //     { label: 'Indiba radiofrekventna terapija — estetska primjena', price: '65€' },
   //   ],
   // },
-  {
-    id: 'botox',
-    group: 'estetski',
-    label: 'Tretmani botoksom',
-    description: 'Aplikacija botoksa za uklanjanje bora, ovisno o broju tretiranih zona. (genericki) ',
-    kind: 'simple',
-    tiers: [
-      { label: '1 zona', price: '120€' },
-      { label: '2 zone', price: '200€' },
-      { label: '3 zone', price: '270€' },
-    ],
-  },
+  // {
+  //   id: 'botox',
+  //   group: 'estetski',
+  //   label: 'Tretmani botoksom',
+  //   description: 'Aplikacija botoksa za uklanjanje bora, ovisno o broju tretiranih zona. (genericki) ',
+  //   kind: 'simple',
+  //   tiers: [
+  //     { label: '1 zona', price: '120€' },
+  //     { label: '2 zone', price: '200€' },
+  //     { label: '3 zone', price: '270€' },
+  //   ],
+  // },
   {
     id: 'usne-fileri',
     group: 'estetski',

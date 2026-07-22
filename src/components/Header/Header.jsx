@@ -14,7 +14,7 @@ const t = {
   lice: 'Lice',
   tijelo: 'Tijelo',
   antiAge: 'Anti age tretmani',
-  botox: 'Botox',
+  // botox: 'Botox',
   usneFileri: 'Povećavanje usana filerima',
   podocnjaci: 'Uklanjanje podočnjaka',
   podbradak: 'Uklanjanje podbratka',
@@ -76,7 +76,7 @@ export default function Header() {
 
                     <span className="header-dropdown-subheading">{t.lice}</span>
                     <a href="/tretmani/anti-age">{t.antiAge}</a>
-                    <a href="/tretmani/botox">{t.botox}</a>
+                    {/* <a href="/tretmani/botox">{t.botox}</a> */}
                     <a href="/tretmani/podocnjaci">{t.podocnjaci}</a>
                     <a href="/tretmani/podbradak">{t.podbradak}</a>
                     <a href="/tretmani/usne-fileri">{t.usneFileri}</a>
@@ -150,7 +150,7 @@ export default function Header() {
 
               <span className="header-dropdown-subheading">{t.lice}</span>
               <a href="/tretmani/anti-age" onClick={closeMenus}>{t.antiAge}</a>
-              <a href="/tretmani/botox" onClick={closeMenus}>{t.botox}</a>
+              {/* <a href="/tretmani/botox" onClick={closeMenus}>{t.botox}</a> */}
               <a href="/tretmani/podocnjaci" onClick={closeMenus}>{t.podocnjaci}</a>
               <a href="/tretmani/podbradak" onClick={closeMenus}>{t.podbradak}</a>
               <a href="/tretmani/usne-fileri" onClick={closeMenus}>{t.usneFileri}</a>

@@ -3,7 +3,7 @@ import './Treatments.css';
 
 const treatments = [
   { name: 'Anti age tretmani', category: 'Lice', slug: 'anti-age' },
-  { name: 'Botox', category: 'Lice', slug: 'botox' },
+  // { name: 'Botox', category: 'Lice', slug: 'botox' },
   { name: 'Uklanjanje podočnjaka', category: 'Lice', slug: 'podocnjaci' },
   { name: 'Uklanjanje podbratka', category: 'Lice', slug: 'podbradak' },
   { name: 'Povećavanje usana filerima', category: 'Lice', slug: 'usne-fileri' },
