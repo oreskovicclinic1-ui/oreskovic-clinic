@@ -7,6 +7,7 @@
 // (label + price). `kind: 'grouped'` is used only for hair removal,
 // where items are split into sub-groups (Tijelo / Lice / Paketi).
 
+
 export const categories = [
   {
     id: 'mrsavljenje',
