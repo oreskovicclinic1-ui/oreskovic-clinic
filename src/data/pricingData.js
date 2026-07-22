@@ -235,18 +235,18 @@ export const categories = [
       { label: 'Terapijska neuromuskularna stimulacija', price: '40€' },
     ],
   },
-  {
-    id: 'nutricionizam',
-    group: 'zdravstveni',
-    label: 'Nutricionizam i savjetovanje',
-    description: 'Analiza tijela i personalizovani planovi ishrane.',
-    kind: 'simple',
-    tiers: [
-      { label: 'Tjelesna analiza s tumačenjem', price: '150€' },
-      { label: 'Zdravstveno-nutricionističko savjetovanje', price: '150€' },
-      { label: 'Savjetovanje za mršavljenje + plan', price: '150€' },
-    ],
-  },
+  // {
+  //   id: 'nutricionizam',
+  //   group: 'zdravstveni',
+  //   label: 'Nutricionizam i savjetovanje',
+  //   description: 'Analiza tijela i personalizovani planovi ishrane.',
+  //   kind: 'simple',
+  //   tiers: [
+  //     { label: 'Tjelesna analiza s tumačenjem', price: '150€' },
+  //     { label: 'Zdravstveno-nutricionističko savjetovanje', price: '150€' },
+  //     { label: 'Savjetovanje za mršavljenje + plan', price: '150€' },
+  //   ],
+  // },
 ];
 
 export function extractNumber(priceString) {

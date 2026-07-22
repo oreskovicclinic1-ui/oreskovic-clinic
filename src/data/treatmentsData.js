@@ -587,32 +587,32 @@ straznjica: {
     faq: genericFaq,
   },
 
-  nutricionizam: {
-      pricingId: 'nutricionizam',
-      slug: 'nutricionizam',
-      name: 'Nutricionizam i savjetovanje',
-      category: 'Zdravstvene usluge',
-      heroImage: '/treatments/nutricionizam.webp',
-      pricingImage: '/treatments/nutricionizam-pricing.webp',
-      shortBenefit:
-        'Personalizovan plan ishrane baziran na stvarnoj analizi vašeg tijela. Stručno savjetovanje za mršavljenje, energiju i opće zdravlje. Konkretan plan, ne generički savjeti.',
-      description:
-        'Kroz tjelesnu analizu i stručno nutricionističko savjetovanje kreiramo plan ishrane prilagođen vašim ciljevima — bilo da je riječ o mršavljenju, više energije, ili općem poboljšanju zdravlja.',
-      highlights: [
-        'Detaljna tjelesna analiza s tumačenjem',
-        'Individualno prilagođen plan ishrane',
-        'Stručno vođeno savjetovanje',
-        'Fokus na dugoročne, održive rezultate',
-      ],
-      process: [
-        { title: 'Analiza', text: 'Provodimo tjelesnu analizu i razgovor o vašim ciljevima.' },
-        { title: 'Plan', text: 'Kreiramo personalizovan plan ishrane prilagođen vašem stilu života.' },
-        { title: 'Praćenje', text: 'Pratimo napredak i po potrebi prilagođavamo plan.' },
-      ],
-      forWhom:
-        'Namijenjeno svima koji žele mršaviti, poboljšati energiju, ili jednostavno razumjeti kako ishrana utječe na njihovo zdravlje.',
-      faq: genericFaq,
-    },
+  // nutricionizam: {
+  //     pricingId: 'nutricionizam',
+  //     slug: 'nutricionizam',
+  //     name: 'Nutricionizam i savjetovanje',
+  //     category: 'Zdravstvene usluge',
+  //     heroImage: '/treatments/nutricionizam.webp',
+  //     pricingImage: '/treatments/nutricionizam-pricing.webp',
+  //     shortBenefit:
+  //       'Personalizovan plan ishrane baziran na stvarnoj analizi vašeg tijela. Stručno savjetovanje za mršavljenje, energiju i opće zdravlje. Konkretan plan, ne generički savjeti.',
+  //     description:
+  //       'Kroz tjelesnu analizu i stručno nutricionističko savjetovanje kreiramo plan ishrane prilagođen vašim ciljevima — bilo da je riječ o mršavljenju, više energije, ili općem poboljšanju zdravlja.',
+  //     highlights: [
+  //       'Detaljna tjelesna analiza s tumačenjem',
+  //       'Individualno prilagođen plan ishrane',
+  //       'Stručno vođeno savjetovanje',
+  //       'Fokus na dugoročne, održive rezultate',
+  //     ],
+  //     process: [
+  //       { title: 'Analiza', text: 'Provodimo tjelesnu analizu i razgovor o vašim ciljevima.' },
+  //       { title: 'Plan', text: 'Kreiramo personalizovan plan ishrane prilagođen vašem stilu života.' },
+  //       { title: 'Praćenje', text: 'Pratimo napredak i po potrebi prilagođavamo plan.' },
+  //     ],
+  //     forWhom:
+  //       'Namijenjeno svima koji žele mršaviti, poboljšati energiju, ili jednostavno razumjeti kako ishrana utječe na njihovo zdravlje.',
+  //     faq: genericFaq,
+  //   },
 };
 
 export function getTreatmentBySlug(slug) {

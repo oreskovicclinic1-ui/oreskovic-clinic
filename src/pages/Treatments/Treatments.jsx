@@ -20,7 +20,7 @@ const treatments = [
   // { name: 'Opća medicina i dijagnostika', category: 'Zdravstveni tretman', slug: 'opca-medicina' },
   // { name: 'Medicinske intervencije i terapije', category: 'Zdravstveni tretman', slug: 'medicinske-intervencije' },
   { name: 'Fizikalna i regenerativna terapija', category: 'Zdravstveni tretman', slug: 'fizikalna-terapija' },
-  { name: 'Nutricionizam i savjetovanje', category: 'Zdravstveni tretman', slug: 'nutricionizam' },
+  // { name: 'Nutricionizam i savjetovanje', category: 'Zdravstveni tretman', slug: 'nutricionizam' },
 ];
 
 const loopTreatments = [...treatments, ...treatments];

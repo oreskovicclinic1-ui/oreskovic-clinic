@@ -31,7 +31,7 @@ const t = {
   // opcaMedicina: 'Opća medicina i dijagnostika',
   // medicinskeIntervencije: 'Medicinske intervencije i terapije',
   fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
-  nutricionizam: 'Nutricionizam i savjetovanje',
+  // nutricionizam: 'Nutricionizam i savjetovanje',
 };
 
 export default function Header() {
@@ -99,7 +99,7 @@ export default function Header() {
                     {/* <a href="/tretmani/opca-medicina">{t.opcaMedicina}</a> */}
                     {/* <a href="/tretmani/medicinske-intervencije">{t.medicinskeIntervencije}</a> */}
                     <a href="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</a>
-                    <a href="/tretmani/nutricionizam">{t.nutricionizam}</a>
+                    {/* <a href="/tretmani/nutricionizam">{t.nutricionizam}</a> */}
                   </div>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export default function Header() {
               {/* <a href="/tretmani/opca-medicina" onClick={closeMenus}>{t.opcaMedicina}</a> */}
               {/* <a href="/tretmani/medicinske-intervencije" onClick={closeMenus}>{t.medicinskeIntervencije}</a> */}
               <a href="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</a>
-              <a href="/tretmani/nutricionizam" onClick={closeMenus}>{t.nutricionizam}</a>
+              {/* <a href="/tretmani/nutricionizam" onClick={closeMenus}>{t.nutricionizam}</a> */}
             </div>
           )}
         </div>
