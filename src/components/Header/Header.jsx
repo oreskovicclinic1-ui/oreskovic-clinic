@@ -31,7 +31,7 @@ const t = {
   // testAlergije: 'Test na alergije',
   // opcaMedicina: 'Opća medicina i dijagnostika',
   // medicinskeIntervencije: 'Medicinske intervencije i terapije',
-  fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
+  // fizikalnaTerapija: 'Fizikalna i regenerativna terapija',
   // nutricionizam: 'Nutricionizam i savjetovanje',
 };
 
@@ -152,7 +152,7 @@ export default function Header() {
                     {/* <a href="/tretmani/test-alergije">{t.testAlergije}</a> */}
                     {/* <a href="/tretmani/opca-medicina">{t.opcaMedicina}</a> */}
                     {/* <a href="/tretmani/medicinske-intervencije">{t.medicinskeIntervencije}</a> */}
-                    <Link to="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</Link>
+                    {/* <Link to="/tretmani/fizikalna-terapija">{t.fizikalnaTerapija}</Link> */}
                     {/* <a href="/tretmani/nutricionizam">{t.nutricionizam}</a> */}
                   </div>
                 </div>
@@ -227,7 +227,7 @@ export default function Header() {
               {/* <a href="/tretmani/test-alergije" onClick={closeMenus}>{t.testAlergije}</a> */}
               {/* <a href="/tretmani/opca-medicina" onClick={closeMenus}>{t.opcaMedicina}</a> */}
               {/* <a href="/tretmani/medicinske-intervencije" onClick={closeMenus}>{t.medicinskeIntervencije}</a> */}
-              <Link to="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</Link>
+              {/* <Link to="/tretmani/fizikalna-terapija" onClick={closeMenus}>{t.fizikalnaTerapija}</Link> */}
               {/* <a href="/tretmani/nutricionizam" onClick={closeMenus}>{t.nutricionizam}</a> */}
             </div>
           )}
