@@ -75,7 +75,7 @@ export default function CjenikPage() {
             Jasne cijene, <em>bez</em> skrivenih troškova
           </h1>
           <p className="cjenik-page-intro">
-            Pregledajte cijene svih naših tretmana i usluga, pojedinačno ili u paketima.
+            Pregledajte cijene svih naših tretmana i usluga, pojedinačno ili u paketima. Plaćanje svim karticama na do 24 rate.
           </p>
         <Link to="/rezervacija" className="cjenik-page-hero-cta">
           Rezervirajte termin

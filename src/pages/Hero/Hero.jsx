@@ -53,9 +53,10 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            Poliklinika koja povezuje medicinsku stručnost i najnoviju tehnologiju. Kroz
-            cjelovitu rehabilitaciju i estetske tretmane donosimo dugoročna rješenja za vaše
-            zdravlje i tijelo.
+            Poliklinika koja spaja medicinsku stručnost, naprednu tehnologiju i individualan pristup kako bi pružila dugoročna rješenja za vaše zdravlje i tijelo. 
+            <br/>
+            Jedina smo klinika u Hrvatskoj koja garantira rezultate ili vraća novac.
+            Uz mogućnost plaćanja karticama na do 24 rate, vrhunski tretmani nikada nisu bili dostupniji.
           </p>
 
           <div className="hero-actions">
@@ -75,6 +76,7 @@ export default function Hero() {
           <p className="hero-trust">
             <strong>1000+</strong> zadovoljnih pacijenata
           </p>
+          
         </div>
 
         <div className="hero-visual hero-enter hero-enter-2">

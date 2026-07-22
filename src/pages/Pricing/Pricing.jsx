@@ -70,9 +70,9 @@ function PricingPanel({ category, imageSide }) {
           ))}
         </div>
 
-        {/* <Link to={category.moreInfoHref} className="pricing-panel-link">
-          Više informacija →
-        </Link> */}
+        <Link to='/rezervacija' className="pricing-panel-link">
+              Plaćanje svim karticama na do 24 rate.
+        </Link>
       </div>
     </div>
   );

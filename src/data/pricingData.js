@@ -14,7 +14,7 @@ export const categories = [
     group: 'estetski',
     label: 'Tretmani mršavljenja',
     description:
-      'Tretman osigurava brze rezultate u svim područjima tijela (trbuh, bokovi, ruke, noge i leđa).',
+      'Tretman osigurava brze rezultate u svim područjima tijela (trbuh, bokovi, ruke, noge i leđa). Garantiramo rezultate ili vraćamo novac.',
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '65€' },
@@ -27,7 +27,7 @@ export const categories = [
     group: 'estetski',
     label: 'Anti celulitni tretmani',
     description:
-      'Uklanjanje celulita, posebice na području nogu i stražnjice — jedan od najčešćih estetskih tretmana.',
+      'Uklanjanje celulita, posebice na području nogu i stražnjice — jedan od najčešćih estetskih tretmana. Garantiramo rezultate ili vraćamo novac.',
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '65€' },
@@ -52,7 +52,7 @@ export const categories = [
     group: 'estetski',
     label: 'Uklanjanje podbratka',
     description:
-      'Indiba tretman uklanjanja podbratka, za razliku od liposukcije, predstavlja u potpunosti neinvazivan postupak bez igle.',
+      'Indiba tretman uklanjanja podbratka, za razliku od liposukcije, predstavlja u potpunosti neinvazivan postupak bez igle. Garantiramo rezultate ili vraćamo novac.',
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '65€' },
@@ -78,7 +78,7 @@ export const categories = [
     group: 'estetski',
     label: 'Anti age tretmani',
     description:
-      'Koža se dubinski hidratizira, zateže i obnavlja. Uklanjaju se bore, podiže se tonus kože i potiče proizvodnja kolagena. Bore se mogu uklanjati sa svih dijelova lica, vrata i dekoltea.',
+      'Koža se dubinski hidratizira, zateže i obnavlja. Uklanjaju se bore, podiže se tonus kože i potiče proizvodnja kolagena. Bore se mogu uklanjati sa svih dijelova lica, vrata i dekoltea. Garantiramo rezultate ili vraćamo novac.',
     kind: 'simple',
     tiers: [
       { label: '1 tretman', price: '65€' },

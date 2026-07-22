@@ -222,7 +222,7 @@ export const treatments = {
     shortBenefit:
       'Do željene forme bez napora — potpuno bezbolno i neinvazivno. Masne naslage uklanjamo sa svih dijelova tijela, bez perioda oporavka. Rezultat garantiramo povratom novca.',
     description:
-      'Sinergija naših aparata i jedinstvenih tehnika sigurno će vas dovesti do željene forme bez napora. Tretmani su potpuno bezbolni, ugodni, neinvazivni i bez nuspojava — zbog neinvazivnosti, u jednom danu se može odraditi i veći broj tretmana. Masne naslage i višak kože mogu se ukloniti sa svih dijelova tijela: trbuh, bokovi, donja leđa, noge, ruke.',
+      'Sinergija naših aparata i jedinstvenih tehnika sigurno će vas dovesti do željene forme bez napora. Tretmani su potpuno bezbolni, ugodni, neinvazivni i bez nuspojava — zbog neinvazivnosti, u jednom danu može se odraditi i veći broj tretmana. Masne naslage i višak kože mogu se ukloniti sa svih dijelova tijela: trbuh, bokovi, donja leđa, noge, ruke. Garantiramo rezultate ili vraćamo novac.',
     highlights: [
       'Potpuno bezbolno i neinvazivno',
       'Bez perioda oporavka',
@@ -286,7 +286,7 @@ export const treatments = {
     shortBenefit:
       'Manje bora, više kolagena — mlađa, zategnuta koža bez igala. Djeluje na lice, vrat i dekolte, uz dubinsku hidrataciju kože. Dostupno u Zagrebu i Opatiji, uz rezultat garantiran povratom novca.',
     description:
-      'Koža se dubinski hidratizira, zateže i obnavlja. Uklanjaju se bore, podiže se tonus kože i potiče proizvodnja kolagena — sa svih dijelova lica, vrata i dekoltea. Tretman je potpuno bezbolan, ugodan, neinvazivan i bez nuspojava, dostupan u Zagrebu i Opatiji.',
+      'Koža se dubinski hidratizira, zateže i obnavlja. Uklanjaju se bore, podiže se tonus kože i potiče proizvodnja kolagena — sa svih dijelova lica, vrata i dekoltea. Tretman je potpuno bezbolan, ugodan, neinvazivan i bez nuspojava, dostupan u Zagrebu i Opatiji. Garantiramo rezultate ili vraćamo novac.',
     highlights: [
       'Dubinska hidratacija i zatezanje kože',
       'Uklanja bore na licu, vratu i dekolteu',
@@ -317,7 +317,7 @@ export const treatments = {
     heroImage: '/treatments/podbradak.webp',
     pricingImage: '/treatments/podbradak-pricing.webp',
     shortBenefit:
-      'Definisana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka.',
+      'Definisana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka. Rezultat garantiramo povratom novca.',
     description:
       'Indiba tretman uklanjanja podbratka, za razliku od liposukcije, predstavlja u potpunosti neinvazivan postupak bez igle. Sinergija naših aparata zateže kožu, uklanja masne naslage i bore na području podbratka i/ili dekoltea, uz rezultat garantiran povratom novca.',
     highlights: [
