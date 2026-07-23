@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
             <strong>Bellpax Maximus d.o.o.</strong>, Ulica Matice hrvatske 2, Zagreb (u daljnjem
             tekstu: „mi", „nas", „Orešković Clinic"). Za sva pitanja vezana uz obradu osobnih
             podataka možete nas kontaktirati na{' '}
-            <a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a>.
+            <a href="mailto:info@oreskovicclinic.com">info@oreskovicclinic.com</a>.
           </p>
         </section>
 
@@ -144,7 +144,7 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p>
             Za ostvarivanje bilo kojeg od ovih prava, kontaktirajte nas na{' '}
-            <a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a>.
+            <a href="mailto:info@oreskovicclinic.com">info@oreskovicclinic.com</a>.
           </p>
         </section>
 
@@ -182,7 +182,7 @@ export default function PrivacyPolicyPage() {
           <p>
             Za sva pitanja vezana uz ovu politiku privatnosti ili obradu vaših osobnih podataka,
             kontaktirajte nas na{' '}
-            <a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a>.
+            <a href="mailto:info@oreskovicclinic.com">info@oreskovicclinic.com</a>.
           </p>
         </section>
       </div>

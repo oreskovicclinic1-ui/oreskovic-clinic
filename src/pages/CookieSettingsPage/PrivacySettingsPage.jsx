@@ -204,7 +204,7 @@ export default function PrivacySettingsPage() {
           <p>
             Ako imate pitanja ili nedoumice vezane za Politiku kolačića, možete nas kontaktirati
             na{' '}
-            <a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a>.
+            <a href="mailto:info@oreskovicclinic.com">info@oreskovicclinic.com</a>.
           </p>
         </section>
       </div>

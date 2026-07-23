@@ -115,7 +115,7 @@ export default function Footer() {
           <ul className="footer-list">
             <li><a href="tel:+385953702034">+385 95 3702 034</a></li>
             <li><a href="tel:+385916104690">+385 91 610 4690</a></li>
-            <li><a href="mailto:hbc.zagreb@gmail.com">hbc.zagreb@gmail.com</a></li>
+            {/* <li><a href="mailto:info@oreskovicclinic.com">info@oreskovicclinic.com</a></li> */}
           </ul>
         </div>
       </div>
