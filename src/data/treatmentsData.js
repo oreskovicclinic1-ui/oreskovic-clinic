@@ -39,7 +39,7 @@ export const treatments = {
     heroImage: '/treatments/test-intolerancija.webp',
     pricingImage: '/treatments/test-intolerancija-pricing.webp',
     shortBenefit:
-      'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno i bez igle. Test traje samo 20 minuta, a rezultati su gotovi odmah. Uz to dobivate i uvid u status vitamina i minerala u organizmu.',
+      'Saznajte koju hranu vaše tijelo ne podnosi — brzo, bezbolno i bez igle. Test traje samo 20 minuta, a rezultati su gotovi odmah. Uz to dobivate i uvid u status vitamina i minerala u organizmu. Test obuhvaća analizu 240 namirnica, 300 alergena te 20 vitamina i minerala.',
     description:
       'Test intolerancije na hranu brzo i jednostavno otkriva koje namirnice biste trebali izbaciti iz prehrane kako biste smanjili umor, probavne smetnje, nadutost i manjak energije. Uz test intolerancije, u istom pregledu obavlja se i test na alergije, kao i provjera statusa vitamina i minerala. Tretman izvodimo Bicom Body Check 2 aparatom, koji uz intolerancije i alergije pokazuje i koje vitamine i minerale vašem tijelu nedostaje. Postupak je potpuno neinvazivan — bez igala — a rezultati su gotovi već za 20 minuta.',
     highlights: [
