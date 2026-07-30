@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import FinalCta from '../FinalCta/FinalCta';
+import PricingDetailModal from '../../components/PricingDetailModal/PricingDetailModal';
 import './CjenikPage.css';
 import backgroundImage from '../../assets/cjenik-cover.webp';
 import { categories, getStartingPrice, groupLabels } from '../../data/pricingData';
@@ -165,69 +166,7 @@ export default function CjenikPage() {
         </div>
       </section>
 
-      {selectedCategory && (
-        <div className="cjenik-detail-overlay" onClick={() => setSelectedId(null)}>
-          <div className="cjenik-detail-panel" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="cjenik-detail-close"
-              aria-label="Zatvori"
-              onClick={() => setSelectedId(null)}
-            >
-              ✕
-            </button>
-
-            <div className="cjenik-detail-image">
-              <img src={`/treatments/${selectedCategory.id}.webp`} alt={selectedCategory.label} />
-            </div>
-
-            <div className="cjenik-detail-content">
-              {selectedCategory.badge && (
-                <span className="cjenik-detail-badge">{selectedCategory.badge}</span>
-              )}
-              <h2 className="cjenik-detail-title">{selectedCategory.label}</h2>
-              <p className="cjenik-detail-description">{selectedCategory.description}</p>
-
-              {selectedCategory.kind === 'simple' && (
-                <div className="cjenik-detail-tiers">
-                  {selectedCategory.tiers.map((tier) => (
-                    <div className="cjenik-tier-row" key={tier.label}>
-                      <span className="cjenik-tier-label">{tier.label}</span>
-                      <span className="cjenik-tier-price">
-                        {tier.oldPrice && <span className="cjenik-tier-old">{tier.oldPrice}</span>}
-                        <span className="cjenik-tier-current">{tier.price}</span>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {selectedCategory.kind === 'grouped' &&
-                selectedCategory.groups.map((group) => (
-                  <div className="cjenik-detail-group" key={group.groupLabel}>
-                    <h3 className="cjenik-detail-group-title">{group.groupLabel}</h3>
-                    <div className="cjenik-detail-tiers">
-                      {group.items.map((item) => (
-                        <div className="cjenik-tier-row" key={item.label}>
-                          <span className="cjenik-tier-label">{item.label}</span>
-                          <span className="cjenik-tier-price">
-                            {item.oldPrice && (
-                              <span className="cjenik-tier-old">{item.oldPrice}</span>
-                            )}
-                            <span className="cjenik-tier-current">{item.price}</span>
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-
-            <Link to="/rezervacija" className="cjenik-detail-cta">
-              Rezervirajte termin
-            </Link>
-            </div>
-          </div>
-        </div>
-      )}
+      <PricingDetailModal category={selectedCategory} onClose={() => setSelectedId(null)} />
 
       <FinalCta />
     </>

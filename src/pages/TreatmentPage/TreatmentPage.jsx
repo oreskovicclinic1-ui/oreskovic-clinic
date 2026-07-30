@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FinalCta from '../FinalCta/FinalCta';
+import PricingDetailModal from '../../components/PricingDetailModal/PricingDetailModal';
 import { getTreatmentBySlug } from '../../data/treatmentsData';
-import { getCategoryById, getStartingPrice } from '../../data/pricingData';
+import { getCategoryById, getStartingPrice, getSampleTiers } from '../../data/pricingData';
 import './TreatmentPage.css';
 
 function FaqItem({ item, index }) {
@@ -40,6 +41,7 @@ export default function TreatmentPage() {
   const { slug } = useParams();
   const treatment = getTreatmentBySlug(slug);
   const pricing = treatment ? getCategoryById(treatment.pricingId) : null;
+  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
 
   useEffect(() => {
     if (!treatment) return;
@@ -53,6 +55,21 @@ export default function TreatmentPage() {
     }
     meta.setAttribute('content', treatment.shortBenefit);
   }, [treatment]);
+
+  useEffect(() => {
+    if (!isPricingModalOpen) return;
+
+    function handleEscape(e) {
+      if (e.key === 'Escape') setIsPricingModalOpen(false);
+    }
+
+    window.addEventListener('keydown', handleEscape);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = '';
+    };
+  }, [isPricingModalOpen]);
 
   if (!treatment) {
     return (
@@ -135,16 +152,33 @@ export default function TreatmentPage() {
                   ))}
 
                 {pricing.kind === 'grouped' && (
-                  <p className="treatment-pricing-note">
-                    Ovaj tretman ima više regija i paketa — pogledajte pun cjenik za detalje.
-                  </p>
+                  <>
+                    {getSampleTiers(pricing, 5).map((tier) => (
+                      <div className="treatment-tier-row" key={tier.label}>
+                        <span className="treatment-tier-label">{tier.label}</span>
+                        <span className="treatment-tier-price">
+                          {tier.oldPrice && (
+                            <span className="treatment-tier-old">{tier.oldPrice}</span>
+                          )}
+                          <span className="treatment-tier-current">{tier.price}</span>
+                        </span>
+                      </div>
+                    ))}
+                    <p className="treatment-pricing-note">
+                      Ovaj tretman ima više regija i paketa — pogledajte pun cjenik za detalje.
+                    </p>
+                  </>
                 )}
               </div>
 
               <div className="treatment-pricing-actions">
-                <Link to="/cjenik" className="treatment-pricing-link">
+                <button
+                  type="button"
+                  className="treatment-pricing-link"
+                  onClick={() => setIsPricingModalOpen(true)}
+                >
                   Pogledajte pun cjenik →
-                </Link>
+                </button>
 
               <Link to="/rezervacija" className="treatment-cta treatment-cta-primary">
                 Rezervirajte termin
@@ -237,6 +271,13 @@ export default function TreatmentPage() {
             </div>
           </div>
         </section>
+      )}
+
+      {pricing && (
+        <PricingDetailModal
+          category={isPricingModalOpen ? pricing : null}
+          onClose={() => setIsPricingModalOpen(false)}
+        />
       )}
 
       <FinalCta />

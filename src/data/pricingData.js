@@ -35,18 +35,63 @@ export const categories = [
       { label: 'Paket 14+6 GRATIS', price: '910€' },
     ],
   },
-  {
+{
     id: 'dlacice',
     group: 'estetski',
     label: 'Trajno uklanjanje dlačica',
-    badge: '75% OFF',
+    badge: '50% OFF',
     description:
-      'Paket za cijelo tijelo, neograničen broj tretmana dok dlačice u potpunosti ne budu uklonjene.',
-    kind: 'simple',
-    tiers: [
-      { label: 'Paket cijelo tijelo (neograničen broj tretmana)', price: '1000€', oldPrice: '4000€' },
+      'Svaki tretman moguće je odraditi pojedinačno ili unutar paketa. Moguća kupnja paketa 6+3 GRATIS. Dodatnih 20% na kupnju paketa za dodatnu regiju.',
+    kind: 'grouped',
+    groups: [
+      {
+        groupLabel: 'Tijelo',
+        items: [
+          { label: 'Paket cijelo tijelo (neograničen broj tretmana)', price: '1000€', oldPrice: '4000€' },
+          { label: 'Bikini', price: '80€', oldPrice: '160€' },
+          { label: 'Prepone', price: '60€', oldPrice: '120€' },
+          { label: 'Pazusi', price: '60€', oldPrice: '120€' },
+          { label: 'Potkoljenice', price: '125€', oldPrice: '250€' },
+          { label: 'Natkoljenice', price: '125€', oldPrice: '250€' },
+          { label: 'Podlaktice', price: '80€', oldPrice: '160€' },
+          { label: 'Grudi', price: '100€', oldPrice: '200€' },
+          { label: 'Prsa (muškarci)', price: '125€', oldPrice: '250€' },
+          { label: 'Trbuh', price: '125€', oldPrice: '200€' },
+          { label: 'Stražnjica', price: '100€', oldPrice: '200€' },
+          { label: 'Leđa (cijela)', price: '160€', oldPrice: '320€' },
+          { label: 'Leđa (donja)', price: '110€', oldPrice: '220€' },
+          { label: 'Leđa (gornja)', price: '110€', oldPrice: '220€' },
+          { label: 'Trtica', price: '30€', oldPrice: '60€' },
+          { label: 'Crta ispod pupka', price: '50€', oldPrice: '100€' },
+          { label: 'Ramena', price: '110€', oldPrice: '220€' },
+          { label: 'Vrat', price: '75€', oldPrice: '150€' },
+          { label: 'Prsti', price: '25€', oldPrice: '50€' },
+        ],
+      },
+      {
+        groupLabel: 'Lice',
+        items: [
+          { label: 'Brada', price: '50€', oldPrice: '100€' },
+          { label: 'Obrazi', price: '50€', oldPrice: '100€' },
+          { label: 'Nausnice', price: '40€', oldPrice: '80€' },
+          { label: 'Zalisci', price: '25€', oldPrice: '50€' },
+          { label: 'Uši', price: '25€', oldPrice: '50€' },
+          { label: 'Prostor između obrva', price: '25€', oldPrice: '50€' },
+        ],
+      },
+      {
+        groupLabel: 'Paketi za više regija',
+        items: [
+          { label: 'Cijelo lice', price: '100€', oldPrice: '200€' },
+          { label: 'Cijele ruke', price: '125€', oldPrice: '250€' },
+          { label: 'Cijele noge', price: '200€', oldPrice: '400€' },
+          { label: 'Bikini + pazusi', price: '100€', oldPrice: '200€' },
+          { label: 'Ruke + pazusi', price: '150€', oldPrice: '300€' },
+          { label: 'Noge + prepone + bikini', price: '250€', oldPrice: '500€' },
+        ],
+      },
     ],
-  },
+},
   {
     id: 'podbradak',
     group: 'estetski',
@@ -270,3 +315,8 @@ export const groupLabels = {
   estetski: 'Estetski tretmani',
   zdravstveni: 'Zdravstvene usluge',
 };
+
+export function getSampleTiers(category, count = 5) {
+  if (category.kind !== 'grouped') return category.tiers;
+  return category.groups.flatMap((g) => g.items).slice(0, count);
+}
