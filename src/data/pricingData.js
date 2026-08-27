@@ -197,7 +197,7 @@ export const categories = [
     description:
       'U našim ordinacijama koristimo samo najkvalitetniju aparaturu i najučinkovitije tehnike kako bismo riješili vaše bolove. Paket uključuje 6 terapija na Indiba Edna Pro Max uređaju i 6 terapija na K-Laser Cube 4 uređaju.',
     kind: 'simple',
-    tiers: [ { label: 'Paket 6 terapija Indiba + 6 terapija K-Laser - Zagreb & Opatija', price: '350€', oldPrice: '420€' } ],
+    tiers: [ { label: 'Paket 6 terapija Indiba + 6 terapija K-Laser - Zagreb & Opatija', price: '250€', oldPrice: '420€' } ],
   },
   {
     id: 'vitaminske-infuzije',
