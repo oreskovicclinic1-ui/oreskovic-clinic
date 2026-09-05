@@ -207,7 +207,7 @@ export const categories = [
       'U našim ordinacijama koristimo samo najkvalitetniju aparaturu i najučinkovitije tehnike za vašu vitalnost i oporavak.',
     kind: 'simple',
     tiers: [
-      { label: '1 tretman', price: '135€' },
+      { label: '1 tretman', price: '185€' },
       // { label: 'Paket 6 infuzija', price: '710€', oldPrice: '810€' },
       // { label: 'Paket 12 infuzija', price: '1320€', oldPrice: '1620€' },
     ],
