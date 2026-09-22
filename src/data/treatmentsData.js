@@ -164,7 +164,7 @@ export const treatments = {
       'Svaka terapija provodi se uz medicinski nadzor',
     ],
     process: [
-      { title: 'Konsultacija', text: 'Obavezna konsultacija (15–30 min) prije svakog tretmana, na koju je potrebno donijeti kompletan krvni status i biokemijski nalaz.' },
+      { title: 'Konzultacija', text: 'Obavezna konzultacija (15–30 min) prije svakog tretmana, na koju je potrebno donijeti kompletan krvni status i biokemijski nalaz.' },
       { title: 'Priprema', text: 'Nakon dogovorenog termina, na tretman ponesite popunjen obrazac za IV terapiju, popis lijekova/suplemenata i kopiju posljednjeg krvnog nalaza (ne stariji od 3 mjeseca).' },
       { title: 'Infuzija', text: 'Infuzija sadrži B-kompleks, vitamin C, glutation i minerale poput cinka i magnezija, isporučene direktno u krvotok.' },
     ],
@@ -418,7 +418,7 @@ export const treatments = {
       'Minimalna nelagoda, bez perioda oporavka',
     ],
     process: [
-      { title: 'Konsultacija', text: 'Zajedno definiramo željeni oblik i volumen usana.' },
+      { title: 'Konzultacija', text: 'Zajedno definiramo željeni oblik i volumen usana.' },
       { title: 'Aplikacija filera', text: 'Filer se precizno ubrizgava u ciljana područja usana.' },
       { title: 'Kontrola', text: 'Kontrolni pregled nakon 2 tjedna radi eventualne korekcije.' },
     ],
