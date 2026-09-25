@@ -82,3 +82,19 @@ body {
   flex-wrap: wrap;
   row-gap: 6px;
 }
+
+@media (max-width: 600px) {
+  .cjenik-tier-row,
+  .treatment-tier-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .cjenik-tier-row .cjenik-tier-price,
+  .treatment-tier-row .treatment-tier-price {
+    flex-wrap: wrap;
+    white-space: normal;
+    gap: 4px 12px;
+  }
+}
