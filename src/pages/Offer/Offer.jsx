@@ -35,7 +35,8 @@ export default function Offer() {
           </h2>
 
           <div className="offer-price-row">
-            <span className="offer-price">1000€</span>
+            <span className="tier-anchor">Sidrena cijena 1000€</span>
+            <span className="offer-price"><span className="tier-anchor">Cijena </span>1000€</span>
             <span className="offer-price-note">(cijena paketa)</span>
           </div>
 

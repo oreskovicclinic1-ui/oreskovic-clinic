@@ -54,3 +54,31 @@
 body {
   margin: 0;
 }
+
+/* EU: "Sidrena cijena" label shown next to the regular price */
+.tier-anchor {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(34, 31, 29, 0.65);
+}
+
+[class$="-current"] > .tier-anchor,
+.offer-price > .tier-anchor {
+  margin-right: 5px;
+}
+
+.offer-price-row > .tier-anchor {
+  flex: 0 0 100%;
+  font-size: 14px;
+}
+
+.cjenik-tier-row .cjenik-tier-price,
+.treatment-tier-row .treatment-tier-price {
+  gap: 14px;
+}
+
+.offer-price-row {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}

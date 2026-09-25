@@ -27,7 +27,8 @@ export default function PricingDetailModal({ category, onClose }) {
                   <span className="cjenik-tier-label">{tier.label}</span>
                   <span className="cjenik-tier-price">
                     {tier.oldPrice && <span className="cjenik-tier-old">{tier.oldPrice}</span>}
-                    <span className="cjenik-tier-current">{tier.price}</span>
+                    <span className="tier-anchor">Sidrena cijena {tier.price}</span>
+                    <span className="cjenik-tier-current"><span className="tier-anchor">Cijena </span>{tier.price}</span>
                   </span>
                 </div>
               ))}
@@ -44,7 +45,8 @@ export default function PricingDetailModal({ category, onClose }) {
                       <span className="cjenik-tier-label">{item.label}</span>
                       <span className="cjenik-tier-price">
                         {item.oldPrice && <span className="cjenik-tier-old">{item.oldPrice}</span>}
-                        <span className="cjenik-tier-current">{item.price}</span>
+                        <span className="tier-anchor">Sidrena cijena {item.price}</span>
+                        <span className="cjenik-tier-current"><span className="tier-anchor">Cijena </span>{item.price}</span>
                       </span>
                     </div>
                   ))}

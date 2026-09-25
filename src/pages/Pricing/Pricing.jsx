@@ -62,7 +62,8 @@ function PricingPanel({ category, imageSide }) {
                   <span className="pricing-tier-label">{tier.label}</span>
                   <span className="pricing-tier-price">
                     {tier.oldPrice && <span className="pricing-tier-old">{tier.oldPrice}</span>}
-                    <span className="pricing-tier-current">{tier.price}</span>
+                    <span className="tier-anchor">Sidrena cijena {tier.price}</span>
+                    <span className="pricing-tier-current"><span className="tier-anchor">Cijena </span>{tier.price}</span>
                   </span>
                 </div>
               ))}

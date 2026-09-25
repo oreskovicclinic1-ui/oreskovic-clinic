@@ -146,7 +146,8 @@ export default function TreatmentPage() {
                         {tier.oldPrice && (
                           <span className="treatment-tier-old">{tier.oldPrice}</span>
                         )}
-                        <span className="treatment-tier-current">{tier.price}</span>
+                        <span className="tier-anchor">Sidrena cijena {tier.price}</span>
+                        <span className="treatment-tier-current"><span className="tier-anchor">Cijena </span>{tier.price}</span>
                       </span>
                     </div>
                   ))}
@@ -160,7 +161,8 @@ export default function TreatmentPage() {
                           {tier.oldPrice && (
                             <span className="treatment-tier-old">{tier.oldPrice}</span>
                           )}
-                          <span className="treatment-tier-current">{tier.price}</span>
+                          <span className="tier-anchor">Sidrena cijena {tier.price}</span>
+                          <span className="treatment-tier-current"><span className="tier-anchor">Cijena </span>{tier.price}</span>
                         </span>
                       </div>
                     ))}
