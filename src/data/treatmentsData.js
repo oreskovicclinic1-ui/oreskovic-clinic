@@ -317,7 +317,7 @@ export const treatments = {
     heroImage: '/treatments/podbradak.webp',
     pricingImage: '/treatments/podbradak-pricing.webp',
     shortBenefit:
-      'Definisana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka. Rezultat garantiramo povratom novca.',
+      'Definirana kontura lica, bez igle i bez liposukcije. Zatežemo kožu i uklanjamo masne naslage na području podbratka i dekoltea. Potpuno neinvazivno, bez perioda oporavka. Rezultat garantiramo povratom novca.',
     description:
       'Indiba tretman uklanjanja podbratka, za razliku od liposukcije, predstavlja u potpunosti neinvazivan postupak bez igle. Sinergija naših aparata zateže kožu, uklanja masne naslage i bore na području podbratka i/ili dekoltea, uz rezultat garantiran povratom novca.',
     highlights: [
